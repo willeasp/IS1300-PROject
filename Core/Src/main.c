@@ -32,6 +32,7 @@
 #include "display.h"
 #include "error.h"
 #include "uart.h"
+#include "clock.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,23 +102,26 @@ int main(void)
   /* USER CODE BEGIN 2 */
   init_display();
 
-  char welcome[] = "Hello World interrupt!\r\n";
-  uart_send(welcome, strlen(welcome));
+  uart_println("Hello World!");
 
-  RTC_TimeTypeDef time;
-  time.Hours = 20;
-  time.Minutes = 34;
-  time.Seconds = 50;
 
-  HAL_RTC_SetDate(&hrtc, NULL, 0);
-  HAL_RTC_SetTime(&hrtc, &time, RTC_FORMAT_BIN);
-
-  uint8_t buf_len = 11;
+  uint8_t buf_len = 8;
   char buf[buf_len];
-
   char c;
-  /* USER CODE END 2 */
+  RTC_TimeTypeDef *time;
 
+  /* initialise time */
+  int h;
+  int m;
+  int s;
+  uart_get_clock_input(buf);
+  uart_println("");
+  uart_println(buf);
+  sscanf(buf, "%02d:%02d:%02d", &h, &m, &s);
+  start_clock(h, m, s);
+
+
+  /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -129,11 +133,11 @@ int main(void)
           uart_send(&c, 1);
 
 
-      HAL_RTC_GetTime(&hrtc, &time, RTC_FORMAT_BIN);
-      sprintf(buf, "%02d:%02d:%02d", time.Hours, time.Minutes, time.Seconds);
+      /* get and write time */
+      time = get_time();
+      sprintf(buf, "%02d:%02d:%02d", time->Hours, time->Minutes, time->Seconds);
       uart_println(buf);
-
-      display_write_row(buf, buf_len -3, 0);
+      display_write_row(buf, buf_len, 0);
 
     /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */

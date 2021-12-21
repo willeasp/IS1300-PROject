@@ -1,3 +1,4 @@
+"./Core/Src/clock.o"
 "./Core/Src/display.o"
 "./Core/Src/error.o"
 "./Core/Src/gpio.o"
