@@ -13,7 +13,7 @@
  * @brief Set the backlight to white
  */
 void init_backlight () {
-    HAL_GPIO_WritePin(Disp_White_GPIO_Port, Disp_White_Pin, SET);
+    HAL_GPIO_WritePin(Disp_White_GPIO_Port, Disp_White_Pin, GPIO_PIN_SET);
 }
 
 
@@ -24,9 +24,9 @@ void test_backlight () {
     GPIO_TypeDef* ports[] = {Disp_White_GPIO_Port, Disp_Green_GPIO_Port, Disp_Red_GPIO_Port};
     uint16_t pins[] = {Disp_White_Pin, Disp_Green_Pin, Disp_Red_Pin};
     for (int i = 0; i < 3; ++i) {
-        HAL_GPIO_WritePin(ports[i], pins[i], SET);
+        HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_SET);
         HAL_Delay(200);
-        HAL_GPIO_WritePin(ports[i], pins[i], RESET);
+        HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_RESET);
     }
 }
 
@@ -112,7 +112,9 @@ void init_display () {
 
     HAL_Delay(10);
 
-    display_write((uint8_t*) "init", 4);
+    display_write((uint8_t*) "init mf", 7);
+
+    HAL_Delay(100);
 }
 
 
