@@ -9,6 +9,16 @@
 #include "error.h"
 
 
+/**
+ * @brief Perform a hardware reset on the display
+ */
+void hardware_reset () {
+    HAL_Delay(5);
+    HAL_GPIO_WritePin(Disp_Reset_GPIO_Port, Disp_Reset_Pin, GPIO_PIN_RESET);
+    HAL_Delay(10);
+    HAL_GPIO_WritePin(Disp_Reset_GPIO_Port, Disp_Reset_Pin, GPIO_PIN_SET);
+    HAL_Delay(1);
+}
 
 
 /**
@@ -102,14 +112,15 @@ int set_row (uint8_t row) {
  */
 int clear_display () {
     uint8_t ins = 0x01;
-    display_send_instruction(&ins, 1);
+    return display_send_instruction(&ins, 1);
 }
 
 /**
  * @brief Initialise the display
  */
 void init_display () {
-    HAL_Delay(5);
+    hardware_reset();
+
     init_backlight();
 
     uint16_t ins_length = 12;
