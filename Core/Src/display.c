@@ -9,12 +9,6 @@
 #include "error.h"
 
 
-/**
- * @brief Set the backlight to white
- */
-void init_backlight () {
-    HAL_GPIO_WritePin(Disp_White_GPIO_Port, Disp_White_Pin, GPIO_PIN_SET);
-}
 
 
 /**
@@ -28,6 +22,15 @@ void test_backlight () {
         HAL_Delay(200);
         HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_RESET);
     }
+}
+
+
+/**
+ * @brief Set the backlight to white
+ */
+void init_backlight () {
+    test_backlight();
+    HAL_GPIO_WritePin(Disp_White_GPIO_Port, Disp_White_Pin, GPIO_PIN_SET);
 }
 
 /**
@@ -85,6 +88,24 @@ int display_write (uint8_t *characters, uint16_t length) {
 }
 
 /**
+ * @brief Set the cursor on the display
+ * @param row The row to write to
+ */
+int set_row (uint8_t row) {
+    /* the address range of DDARM is 00H-13H, 20H-33H, 40H53H, 60H-73H */
+    uint8_t rows[] = {0b10000000, 0b10100000, 0b11000000, 0b11100000};
+    return display_send_instruction(&rows[row], 1);
+}
+
+/**
+ * @brief Clears the display
+ */
+int clear_display () {
+    uint8_t ins = 0x01;
+    display_send_instruction(&ins, 1);
+}
+
+/**
  * @brief Initialise the display
  */
 void init_display () {
@@ -112,9 +133,16 @@ void init_display () {
 
     HAL_Delay(10);
 
-    display_write((uint8_t*) "init mf", 7);
+    for (int i = 0; i < 4; ++i) {
+        set_row(i);
+        display_write((uint8_t*) "0123456789", 10);
+    }
 
-    HAL_Delay(100);
+    HAL_Delay(1000);
+
+    clear_display();
+
+    HAL_Delay(10);
 }
 
 

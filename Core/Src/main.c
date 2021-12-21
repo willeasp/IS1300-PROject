@@ -97,7 +97,6 @@ int main(void)
   MX_UART5_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
-  test_backlight();
   init_display();
   /* USER CODE END 2 */
 
