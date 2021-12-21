@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "rtc.h"
 #include "spi.h"
 #include "gpio.h"
 
@@ -26,9 +27,11 @@
 /* USER CODE BEGIN Includes */
 #include "string.h"
 #include "usart.h"
+#include "stdio.h"
 
 #include "display.h"
 #include "error.h"
+#include "uart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,8 +42,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 ITStatus uartReady = RESET;
-#define BUFFERSIZE 22
-uint8_t buffer[] = "Hello World interrupt!";
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -96,38 +97,45 @@ int main(void)
   MX_GPIO_Init();
   MX_UART5_Init();
   MX_SPI2_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
   init_display();
+
+  char welcome[] = "Hello World interrupt!\r\n";
+  uart_send(welcome, strlen(welcome));
+
+  RTC_TimeTypeDef time;
+  time.Hours = 20;
+  time.Minutes = 34;
+  time.Seconds = 50;
+
+  HAL_RTC_SetDate(&hrtc, NULL, 0);
+  HAL_RTC_SetTime(&hrtc, &time, RTC_FORMAT_BIN);
+
+  uint8_t buf_len = 11;
+  char buf[buf_len];
+
+  char c;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* Start the transmission process */
-    if (HAL_UART_Transmit_IT(&huart5, (uint8_t*)buffer, BUFFERSIZE) != HAL_OK) {
-        Error_Handler();
-    }
-    /* Wait for the end of the transfer */
-    while (uartReady != SET) {}
-
-    /* Reset transmission flag */
-    uartReady = RESET;
+      uart_receive(&c, 1);
+      if (c == '\r')
+          uart_send("\r\n", 2);
+      else
+          uart_send(&c, 1);
 
 
+      HAL_RTC_GetTime(&hrtc, &time, RTC_FORMAT_BIN);
+      sprintf(buf, "%02d:%02d:%02d", time.Hours, time.Minutes, time.Seconds);
+      uart_println(buf);
 
-    /* Put UART peripheral in reception process */
-    if(HAL_UART_Receive_IT(&huart5, (uint8_t *)buffer, BUFFERSIZE) != HAL_OK) {
-        Error_Handler();
-    }
-    /* Wait for the end of the transfer */
-    while (uartReady != SET) {}
-    /* Reset transmission flag */
-    uartReady = RESET;
-
+      display_write_row(buf, buf_len -3, 0);
 
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -151,9 +159,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLM = 1;

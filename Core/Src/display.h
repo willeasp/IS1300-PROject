@@ -17,3 +17,6 @@ void init_backlight (void);
 void test_backlight (void);
 
 void init_display (void);
+
+
+int display_write_row (char *characters, uint16_t length, uint8_t row);

@@ -36,7 +36,7 @@ void test_backlight () {
 
 
 /**
- * @brief Set the backlight to white
+ * @brief Run through all colors and set the backlight to white
  */
 void init_backlight () {
     test_backlight();
@@ -93,18 +93,29 @@ int display_send_instruction (uint8_t *instructions, uint16_t length) {
  * @param characters The characters to write
  * @param length The number of characters
  */
-int display_write (uint8_t *characters, uint16_t length) {
-    return display_transmit(0b01011111, characters, length);
+int display_write (char *characters, uint16_t length) {
+    return display_transmit(0b01011111, (uint8_t*)characters, length);
 }
 
+uint8_t rows[] = {0b10000000, 0b10100000, 0b11000000, 0b11100000};
 /**
  * @brief Set the cursor on the display
  * @param row The row to write to
  */
 int set_row (uint8_t row) {
     /* the address range of DDARM is 00H-13H, 20H-33H, 40H53H, 60H-73H */
-    uint8_t rows[] = {0b10000000, 0b10100000, 0b11000000, 0b11100000};
     return display_send_instruction(&rows[row], 1);
+}
+
+/**
+ * @brief Write text to a specific row on the display
+ * @param characters The characters to write
+ * @param length The number of characters
+ * @param row The row to write to
+ */
+int display_write_row (char *characters, uint16_t length, uint8_t row) {
+    set_row(row);
+    return display_write(characters, length);
 }
 
 /**
@@ -146,12 +157,14 @@ void init_display () {
 
     for (int i = 0; i < 4; ++i) {
         set_row(i);
-        display_write((uint8_t*) "0123456789", 10);
+        display_write("0123456789", 10);
     }
 
     HAL_Delay(1000);
 
     clear_display();
+
+//    display_write("bababoey", 8);
 
     HAL_Delay(10);
 }
