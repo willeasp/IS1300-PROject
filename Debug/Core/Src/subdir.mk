@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/adc.c \
 ../Core/Src/clock.c \
 ../Core/Src/display.c \
 ../Core/Src/error.c \
@@ -23,6 +24,7 @@ C_SRCS += \
 ../Core/Src/usart.c 
 
 OBJS += \
+./Core/Src/adc.o \
 ./Core/Src/clock.o \
 ./Core/Src/display.o \
 ./Core/Src/error.o \
@@ -41,6 +43,7 @@ OBJS += \
 ./Core/Src/usart.o 
 
 C_DEPS += \
+./Core/Src/adc.d \
 ./Core/Src/clock.d \
 ./Core/Src/display.d \
 ./Core/Src/error.d \

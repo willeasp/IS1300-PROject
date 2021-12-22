@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "rtc.h"
 #include "spi.h"
 #include "tim.h"
@@ -45,6 +46,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 ITStatus uartReady = RESET;
+#define POT_MAX 4066
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -102,51 +104,48 @@ int main(void)
   MX_SPI2_Init();
   MX_RTC_Init();
   MX_TIM3_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-
   init_display();
 
-  set_backlight(WHITE, GPIO_PIN_SET);
-
+  /* program variables */
+  char c;
+  RTC_TimeTypeDef time;
   uint8_t buf_len = 8;
   char buf[buf_len];
+  uint32_t pot;
 
   /* initialise time */
-  int h;
-  int m;
-  int s;
-
+  set_backlight(WHITE, GPIO_PIN_SET);
+  int h, m, s;
   display_write_row("Enter time", 10, 0);
   uart_get_clock_input(buf);
   uart_println("");
   sscanf(buf, "%02d:%02d:%02d", &h, &m, &s);
   start_clock(h, m, s);
   clear_display();
-
-  /* program variables */
-  char c;
-  RTC_TimeTypeDef time;
-
   set_backlight(WHITE, GPIO_PIN_RESET);
   set_brightness(1.0);
+
+  /* initialise potentiometer */
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      uart_receive(&c, 1);
-//      if (c == '\r')
-//          uart_send("\r\n", 2);
-//      else
-//          uart_send(&c, 1);
+//      uart_receive(&c, 1);
+      HAL_Delay(100);
 
-      if (c <= '9' && '0' <= c) {
-          uint8_t val = c - '0';
-          set_brightness((double)val/10);
-      }
-
+      /* potentiometer */
+      HAL_ADC_Start(&hadc1);
+      HAL_ADC_PollForConversion(&hadc1, 10);
+      pot = HAL_ADC_GetValue(&hadc1);
+      uart_printnum(pot);
+      set_brightness((double)pot/POT_MAX);
 
       /* get and write time */
       get_time(&time);
