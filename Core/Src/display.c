@@ -156,7 +156,7 @@ void init_display () {
         0x7A,
         0x01,
         0x38,
-        0x0F,
+        0x0C,       // display on
     };
 
     if (display_send_instruction(instructions, ins_length))
