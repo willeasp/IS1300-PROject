@@ -107,21 +107,24 @@ int main(void)
 
   uint8_t buf_len = 8;
   char buf[buf_len];
-  char c;
-  RTC_TimeTypeDef *time;
 
   /* initialise time */
   int h;
   int m;
   int s;
+//  h = m = s = 23;
   uart_get_clock_input(buf);
   uart_println("");
   uart_println(buf);
   sscanf(buf, "%02d:%02d:%02d", &h, &m, &s);
   start_clock(h, m, s);
 
+  /* program variables */
+  char c;
+  RTC_TimeTypeDef time;
 
   /* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -134,12 +137,13 @@ int main(void)
 
 
       /* get and write time */
-      time = get_time();
-      sprintf(buf, "%02d:%02d:%02d", time->Hours, time->Minutes, time->Seconds);
+      get_time(&time);
+      sprintf(buf, "%02d:%02d:%02d", time.Hours, time.Minutes, time.Seconds);
       uart_println(buf);
       display_write_row(buf, buf_len, 0);
 
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
