@@ -10,6 +10,7 @@ C_SRCS += \
 ../Core/Src/error.c \
 ../Core/Src/gpio.c \
 ../Core/Src/main.c \
+../Core/Src/red.c \
 ../Core/Src/rtc.c \
 ../Core/Src/spi.c \
 ../Core/Src/stm32l4xx_hal_msp.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32l4xx.c \
+../Core/Src/tim.c \
 ../Core/Src/uart.c \
 ../Core/Src/usart.c 
 
@@ -26,6 +28,7 @@ OBJS += \
 ./Core/Src/error.o \
 ./Core/Src/gpio.o \
 ./Core/Src/main.o \
+./Core/Src/red.o \
 ./Core/Src/rtc.o \
 ./Core/Src/spi.o \
 ./Core/Src/stm32l4xx_hal_msp.o \
@@ -33,6 +36,7 @@ OBJS += \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32l4xx.o \
+./Core/Src/tim.o \
 ./Core/Src/uart.o \
 ./Core/Src/usart.o 
 
@@ -42,6 +46,7 @@ C_DEPS += \
 ./Core/Src/error.d \
 ./Core/Src/gpio.d \
 ./Core/Src/main.d \
+./Core/Src/red.d \
 ./Core/Src/rtc.d \
 ./Core/Src/spi.d \
 ./Core/Src/stm32l4xx_hal_msp.d \
@@ -49,6 +54,7 @@ C_DEPS += \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32l4xx.d \
+./Core/Src/tim.d \
 ./Core/Src/uart.d \
 ./Core/Src/usart.d 
 

@@ -8,6 +8,7 @@
 #include "main.h"
 #include "usart.h"
 #include "string.h"
+#include "stdio.h"
 
 #define TIMEOUT 0xFFFFFFFF
 
@@ -35,6 +36,15 @@ int uart_receive (char *buffer, uint16_t length) {
 int uart_println (char *string) {
     uart_send(string, strlen(string));
     return uart_send("\r\n", 2);
+}
+
+/**
+ * @brief Print a number over uart
+ */
+int uart_printnum (uint32_t num) {
+    char buf[20];
+    sprintf(buf, "%lu", num);
+    return uart_println(buf);
 }
 
 /**

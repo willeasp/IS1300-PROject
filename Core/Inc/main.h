@@ -72,8 +72,8 @@ void Error_Handler(void);
 #define Dispay_CLK_GPIO_Port GPIOB
 #define Display_CS_Pin GPIO_PIN_12
 #define Display_CS_GPIO_Port GPIOB
-#define Disp_Red_Pin GPIO_PIN_7
-#define Disp_Red_GPIO_Port GPIOC
+#define Red_PWM_Pin GPIO_PIN_7
+#define Red_PWM_GPIO_Port GPIOC
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14

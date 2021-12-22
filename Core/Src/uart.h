@@ -17,3 +17,4 @@ int uart_send (char *buffer, uint16_t length);
 int uart_receive (char *buffer, uint16_t length);
 int uart_println (char *string);
 void uart_get_clock_input (char *buffer);
+int uart_printnum (uint32_t num);

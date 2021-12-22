@@ -21,6 +21,7 @@
 #include "main.h"
 #include "rtc.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -33,6 +34,7 @@
 #include "error.h"
 #include "uart.h"
 #include "clock.h"
+#include "red.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,11 +101,13 @@ int main(void)
   MX_UART5_Init();
   MX_SPI2_Init();
   MX_RTC_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+
   init_display();
 
-  uart_println("Hello World!");
-
+  set_backlight(WHITE, GPIO_PIN_SET);
 
   uint8_t buf_len = 8;
   char buf[buf_len];
@@ -112,17 +116,20 @@ int main(void)
   int h;
   int m;
   int s;
-//  h = m = s = 23;
+
+  display_write_row("Enter time", 10, 0);
   uart_get_clock_input(buf);
   uart_println("");
-  uart_println(buf);
   sscanf(buf, "%02d:%02d:%02d", &h, &m, &s);
   start_clock(h, m, s);
+  clear_display();
 
   /* program variables */
   char c;
   RTC_TimeTypeDef time;
 
+  set_backlight(WHITE, GPIO_PIN_RESET);
+  set_brightness(1.0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -130,10 +137,15 @@ int main(void)
   while (1)
   {
       uart_receive(&c, 1);
-      if (c == '\r')
-          uart_send("\r\n", 2);
-      else
-          uart_send(&c, 1);
+//      if (c == '\r')
+//          uart_send("\r\n", 2);
+//      else
+//          uart_send(&c, 1);
+
+      if (c <= '9' && '0' <= c) {
+          uint8_t val = c - '0';
+          set_brightness((double)val/10);
+      }
 
 
       /* get and write time */

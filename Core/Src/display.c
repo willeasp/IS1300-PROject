@@ -7,7 +7,11 @@
 #include "main.h"
 #include "spi.h"
 #include "error.h"
+#include "red.h"
 
+
+GPIO_TypeDef* ports[] = {Disp_White_GPIO_Port, Disp_Green_GPIO_Port};
+uint16_t pins[] = {Disp_White_Pin, Disp_Green_Pin};
 
 /**
  * @brief Perform a hardware reset on the display
@@ -25,22 +29,26 @@ void hardware_reset () {
  * @brief Test all backlight colors
  */
 void test_backlight () {
-    GPIO_TypeDef* ports[] = {Disp_White_GPIO_Port, Disp_Green_GPIO_Port, Disp_Red_GPIO_Port};
-    uint16_t pins[] = {Disp_White_Pin, Disp_Green_Pin, Disp_Red_Pin};
+    // TODO add red pwm
     for (int i = 0; i < 3; ++i) {
-        HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_SET);
-        HAL_Delay(200);
-        HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_RESET);
+        if (i != 2) {
+            HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_SET);
+            HAL_Delay(200);
+            HAL_GPIO_WritePin(ports[i], pins[i], GPIO_PIN_RESET);
+        } else {
+            set_brightness(1.0);
+            HAL_Delay(200);
+            set_brightness(0.0);
+        }
     }
 }
 
 
 /**
- * @brief Run through all colors and set the backlight to white
+ * @brief Set a backlight color
  */
-void init_backlight () {
-    test_backlight();
-    HAL_GPIO_WritePin(Disp_White_GPIO_Port, Disp_White_Pin, GPIO_PIN_SET);
+void set_backlight (uint8_t color, GPIO_PinState state) {
+    HAL_GPIO_WritePin(ports[color], pins[color], state);
 }
 
 /**
@@ -132,7 +140,8 @@ int clear_display () {
 void init_display () {
     hardware_reset();
 
-    init_backlight();
+    test_backlight();
+//    init_backlight();
 
     uint16_t ins_length = 12;
     uint8_t instructions[] = {
@@ -153,18 +162,16 @@ void init_display () {
     if (display_send_instruction(instructions, ins_length))
         handle_error();
 
-    HAL_Delay(10);
+    HAL_Delay(5);
 
     for (int i = 0; i < 4; ++i) {
         set_row(i);
         display_write("0123456789", 10);
     }
 
-    HAL_Delay(1000);
+    HAL_Delay(500);
 
     clear_display();
-
-//    display_write("bababoey", 8);
 
     HAL_Delay(10);
 }

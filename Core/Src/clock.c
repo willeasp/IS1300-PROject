@@ -29,6 +29,7 @@ void start_clock (uint8_t hours, uint8_t minutes, uint8_t seconds) {
  */
 void get_time (RTC_TimeTypeDef *time) {
     HAL_RTC_GetTime(&hrtc, time, RTC_FORMAT_BIN);
+    HAL_RTC_GetDate(&hrtc, NULL, RTC_FORMAT_BIN);
 
     /* sad but the RTC started counting beyond :( */
     if (time->Hours == 24) {
