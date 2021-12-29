@@ -47,7 +47,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 ITStatus uartReady = RESET;
-#define POT_MAX 4066
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -108,21 +107,19 @@ int main(void)
   MX_TIM3_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
+
+  /* init display */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
   init_display();
 
   /* program variables */
-  RTC_TimeTypeDef time;
-  uint8_t buf_len = 8;
-  char buf[buf_len];
-  uint32_t pot;
+  char buf[] = "00:00:00";
 
   /* initialise time */
   set_backlight(WHITE, GPIO_PIN_SET);
   int h, m, s;
   display_write_row("Enter time", 10, 0);
   uart_get_clock_input(buf);
-  uart_println("");
   sscanf(buf, "%02d:%02d:%02d", &h, &m, &s);
   start_clock(h, m, s);
   clear_display();
@@ -143,23 +140,26 @@ int main(void)
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+//  RTC_TimeTypeDef time;
+//  uint32_t pot;
   while (1)
   {
-//      uart_receive(&c, 1);
-      HAL_Delay(100);
-
-      /* potentiometer */
-      HAL_ADC_Start(&hadc1);
-      HAL_ADC_PollForConversion(&hadc1, 10);
-      pot = HAL_ADC_GetValue(&hadc1);
-      uart_printnum(pot);
-      set_brightness((double)pot/POT_MAX);
-
-      /* get and write time */
-      get_time(&time);
-      sprintf(buf, "%02d:%02d:%02d", time.Hours, time.Minutes, time.Seconds);
-      uart_println(buf);
-      display_write_row(buf, buf_len, 0);
+////      uart_receive(&c, 1);
+//      HAL_Delay(100);
+//
+//      /* potentiometer */
+//      HAL_ADC_Start(&hadc1);
+//      HAL_ADC_PollForConversion(&hadc1, 10);
+//      pot = HAL_ADC_GetValue(&hadc1);
+//      uart_printnum(pot);
+//      set_brightness((double)pot/POT_MAX);
+//
+//      /* get and write time */
+//      get_time(&time);
+//      sprintf(buf, "%02d:%02d:%02d", time.Hours, time.Minutes, time.Seconds);
+//      uart_println(buf);
+//      display_write_row(buf, BUF_LEN, 0);
 
     /* USER CODE END WHILE */
 

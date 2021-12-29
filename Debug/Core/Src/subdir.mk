@@ -12,6 +12,7 @@ C_SRCS += \
 ../Core/Src/freertos.c \
 ../Core/Src/gpio.c \
 ../Core/Src/main.c \
+../Core/Src/potentiometer.c \
 ../Core/Src/red.c \
 ../Core/Src/rtc.c \
 ../Core/Src/spi.c \
@@ -33,6 +34,7 @@ OBJS += \
 ./Core/Src/freertos.o \
 ./Core/Src/gpio.o \
 ./Core/Src/main.o \
+./Core/Src/potentiometer.o \
 ./Core/Src/red.o \
 ./Core/Src/rtc.o \
 ./Core/Src/spi.o \
@@ -54,6 +56,7 @@ C_DEPS += \
 ./Core/Src/freertos.d \
 ./Core/Src/gpio.d \
 ./Core/Src/main.d \
+./Core/Src/potentiometer.d \
 ./Core/Src/red.d \
 ./Core/Src/rtc.d \
 ./Core/Src/spi.d \

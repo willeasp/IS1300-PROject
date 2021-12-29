@@ -64,8 +64,10 @@ void uart_get_clock_input (char *buffer) {
 
         /* check if done */
         if (i == 8) {
-            if (c == '\r')
+            if (c == '\r') {
+                uart_println("");
                 break;
+            }
             else if (c != 127)
                 continue;
         }

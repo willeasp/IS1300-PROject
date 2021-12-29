@@ -38,6 +38,7 @@
 #include "uart.h"
 #include "clock.h"
 #include "red.h"
+#include "potentiometer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -175,9 +176,7 @@ void startBacklightTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    HAL_ADC_Start(&hadc1);
-    HAL_ADC_PollForConversion(&hadc1, 1);
-    pot = HAL_ADC_GetValue(&hadc1);
+    pot = get_potentiometer_value();
     set_brightness((double)pot/POT_MAX);
 
     vTaskDelayUntil(&lastWakeTime, period);
