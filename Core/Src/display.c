@@ -108,7 +108,7 @@ int display_write (char *characters, uint16_t length) {
 uint8_t rows[] = {0b10000000, 0b10100000, 0b11000000, 0b11100000};
 /**
  * @brief Set the cursor on the display
- * @param row The row to write to
+ * @param[in] row The row to write to
  */
 int set_row (uint8_t row) {
     /* the address range of DDARM is 00H-13H, 20H-33H, 40H53H, 60H-73H */
@@ -117,9 +117,9 @@ int set_row (uint8_t row) {
 
 /**
  * @brief Write text to a specific row on the display
- * @param characters The characters to write
- * @param length The number of characters
- * @param row The row to write to
+ * @param[in] characters The characters to write
+ * @param[in] length The number of characters
+ * @param[in] row The row to write to
  */
 int display_write_row (char *characters, uint16_t length, uint8_t row) {
     set_row(row);
@@ -140,9 +140,6 @@ int clear_display () {
 void init_display () {
     hardware_reset();
 
-    test_backlight();
-//    init_backlight();
-
     uint16_t ins_length = 12;
     uint8_t instructions[] = {
         0x3A,
@@ -162,6 +159,8 @@ void init_display () {
     if (display_send_instruction(instructions, ins_length))
         handle_error();
 
+#ifdef TEST
+    test_backlight();
     HAL_Delay(5);
 
     for (int i = 0; i < 4; ++i) {
@@ -174,6 +173,7 @@ void init_display () {
     clear_display();
 
     HAL_Delay(10);
+#endif
 }
 
 
