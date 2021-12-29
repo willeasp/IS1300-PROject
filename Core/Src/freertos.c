@@ -64,7 +64,7 @@ osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityLow,
 };
 /* Definitions for backlightTask */
 osThreadId_t backlightTaskHandle;
@@ -176,7 +176,7 @@ void startBacklightTask(void *argument)
   for(;;)
   {
     HAL_ADC_Start(&hadc1);
-    HAL_ADC_PollForConversion(&hadc1, 10);
+    HAL_ADC_PollForConversion(&hadc1, 1);
     pot = HAL_ADC_GetValue(&hadc1);
     set_brightness((double)pot/POT_MAX);
 

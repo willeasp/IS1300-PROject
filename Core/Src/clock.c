@@ -13,7 +13,7 @@
  * @brief start the RTC clock
  */
 void start_clock (uint8_t hours, uint8_t minutes, uint8_t seconds) {
-    RTC_TimeTypeDef time;
+    RTC_TimeTypeDef time = {0};
     time.Hours = hours;
     time.Minutes = minutes;
     time.Seconds = seconds;
@@ -25,6 +25,7 @@ void start_clock (uint8_t hours, uint8_t minutes, uint8_t seconds) {
 
 /**
  * @brief Get the current RTC time
+ * @param[out] time The current time
  * @return Pointer to the time struct
  */
 void get_time (RTC_TimeTypeDef *time) {
@@ -32,10 +33,10 @@ void get_time (RTC_TimeTypeDef *time) {
     HAL_RTC_GetDate(&hrtc, NULL, RTC_FORMAT_BIN);
 
     /* sad but the RTC started counting beyond :( */
-    if (time->Hours > 23) {
-        time->Hours = 0;
-        time->Minutes = 0;
-        time->Seconds = 0;
-        HAL_RTC_SetTime(&hrtc, time, RTC_FORMAT_BIN);
-    }
+//    if (time->Hours > 23) {
+//        start_clock(0, 0, 0);
+//        time->Hours = 0;
+//        time->Minutes = 0;
+//        time->Seconds = 0;
+//    }
 }

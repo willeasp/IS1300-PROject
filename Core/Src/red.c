@@ -15,10 +15,10 @@
 
 /**
  * @brief Change the PWM pulse width of the red background light
- * @param[in] brightness The brightness of the backlight
+ * @param[in] brightness The brightness of the backlight from 0 to 1
  */
 void set_brightness (double brightness) {
-    brightness *= brightness * brightness;
+    brightness *= brightness * brightness;  // brightness^3
     uint16_t pulse = (uint16_t) (brightness * (double)0xFFFF);
     __HAL_TIM_SET_COMPARE(&htim3, CHANNEL, pulse);
 }
