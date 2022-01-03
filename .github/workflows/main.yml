@@ -32,8 +32,15 @@ jobs:
         # Working directory
         working-directory: "." # default is .
     
-    - name: Deploy
+    - name: Deploy pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./html
+
+    - name: Deploy latex
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./latex
+        publish_branch: latex-build
