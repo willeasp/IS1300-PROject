@@ -48,6 +48,7 @@ int uart_println (char *string) {
 
 /**
  * @brief Print a number over uart
+ * @param[in] num The number to be printed over UART
  */
 int uart_printnum (uint32_t num) {
     char buf[20];
