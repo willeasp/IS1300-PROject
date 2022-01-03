@@ -1,12 +1,24 @@
 var searchData=
 [
-  ['uart_2ec_0',['uart.c',['../uart_8c.html',1,'']]],
-  ['uart5_5firqhandler_1',['UART5_IRQHandler',['../stm32l4xx__it_8c.html#aa1c474cac5abda23ebbe8a9e8f4d7551',1,'stm32l4xx_it.c']]],
-  ['uart_5fget_5fclock_5finput_2',['uart_get_clock_input',['../uart_8c.html#af95c4cfe610f4d1a02fe9588f7bc5102',1,'uart.c']]],
-  ['uart_5fprintln_3',['uart_println',['../uart_8c.html#a6c4e5c25d370f133b8614509e075cd84',1,'uart.c']]],
-  ['uart_5fprintnum_4',['uart_printnum',['../uart_8c.html#adb9cf1ab22fe9b6e4165a23e627f4187',1,'uart.c']]],
-  ['uart_5freceive_5',['uart_receive',['../uart_8c.html#afe5847c13185b9347958775c30d44205',1,'uart.c']]],
-  ['uart_5fsend_6',['uart_send',['../uart_8c.html#aef6451ab4bd6e3225c37676cde635924',1,'uart.c']]],
-  ['usagefault_5fhandler_7',['UsageFault_Handler',['../stm32l4xx__it_8c.html#a1d98923de2ed6b7309b66f9ba2971647',1,'stm32l4xx_it.c']]],
-  ['usart_2ec_8',['usart.c',['../usart_8c.html',1,'']]]
+  ['set_5fbacklight_0',['set_backlight',['../display_8c.html#a6c534d2b8a36411919e5c67aeb88417c',1,'display.c']]],
+  ['set_5frow_1',['set_row',['../display_8c.html#adf2fce95820b95a0a565b288227312e2',1,'display.c']]],
+  ['spi_2ec_2',['spi.c',['../spi_8c.html',1,'']]],
+  ['split_5fbyte_3',['split_byte',['../display_8c.html#a414526962a6150dfd5835360a509c36c',1,'display.c']]],
+  ['stm32l4xx_5fhal_5fmsp_2ec_4',['stm32l4xx_hal_msp.c',['../stm32l4xx__hal__msp_8c.html',1,'']]],
+  ['stm32l4xx_5fhal_5ftimebase_5ftim_2ec_5',['stm32l4xx_hal_timebase_tim.c',['../stm32l4xx__hal__timebase__tim_8c.html',1,'']]],
+  ['stm32l4xx_5fit_2ec_6',['stm32l4xx_it.c',['../stm32l4xx__it_8c.html',1,'']]],
+  ['stm32l4xx_5fsystem_7',['Stm32l4xx_system',['../group__stm32l4xx__system.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5fdefines_8',['STM32L4xx_System_Private_Defines',['../group___s_t_m32_l4xx___system___private___defines.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5ffunctionprototypes_9',['STM32L4xx_System_Private_FunctionPrototypes',['../group___s_t_m32_l4xx___system___private___function_prototypes.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5ffunctions_10',['STM32L4xx_System_Private_Functions',['../group___s_t_m32_l4xx___system___private___functions.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5fincludes_11',['STM32L4xx_System_Private_Includes',['../group___s_t_m32_l4xx___system___private___includes.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5fmacros_12',['STM32L4xx_System_Private_Macros',['../group___s_t_m32_l4xx___system___private___macros.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5ftypesdefinitions_13',['STM32L4xx_System_Private_TypesDefinitions',['../group___s_t_m32_l4xx___system___private___types_definitions.html',1,'']]],
+  ['stm32l4xx_5fsystem_5fprivate_5fvariables_14',['STM32L4xx_System_Private_Variables',['../group___s_t_m32_l4xx___system___private___variables.html',1,'']]],
+  ['syscalls_2ec_15',['syscalls.c',['../syscalls_8c.html',1,'']]],
+  ['sysmem_2ec_16',['sysmem.c',['../sysmem_8c.html',1,'']]],
+  ['system_5fstm32l4xx_2ec_17',['system_stm32l4xx.c',['../system__stm32l4xx_8c.html',1,'']]],
+  ['systemclock_5fconfig_18',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]],
+  ['systemcoreclockupdate_19',['SystemCoreClockUpdate',['../group___s_t_m32_l4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_stm32l4xx.c']]],
+  ['systeminit_20',['SystemInit',['../group___s_t_m32_l4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'system_stm32l4xx.c']]]
 ];

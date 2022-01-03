@@ -16,6 +16,7 @@ var searchData=
   ['hal_5fuart_5frxcpltcallback_13',['HAL_UART_RxCpltCallback',['../main_8c.html#a64a600961d9507504c5d6af42adc6c67',1,'main.c']]],
   ['hal_5fuart_5ftxcpltcallback_14',['HAL_UART_TxCpltCallback',['../main_8c.html#a7fdc88cab173073f3ee9d4af0b4e8c5f',1,'main.c']]],
   ['hardfault_5fhandler_15',['HardFault_Handler',['../stm32l4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea',1,'stm32l4xx_it.c']]],
-  ['hse_5fvalue_16',['HSE_VALUE',['../group___s_t_m32_l4xx___system___private___defines.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'system_stm32l4xx.c']]],
-  ['hsi_5fvalue_17',['HSI_VALUE',['../group___s_t_m32_l4xx___system___private___defines.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'system_stm32l4xx.c']]]
+  ['hardware_5freset_16',['hardware_reset',['../display_8c.html#af75f0c295259a026924231d6244e6d14',1,'display.c']]],
+  ['hse_5fvalue_17',['HSE_VALUE',['../group___s_t_m32_l4xx___system___private___defines.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'system_stm32l4xx.c']]],
+  ['hsi_5fvalue_18',['HSI_VALUE',['../group___s_t_m32_l4xx___system___private___defines.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'system_stm32l4xx.c']]]
 ];
