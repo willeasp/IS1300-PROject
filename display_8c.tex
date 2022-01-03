@@ -1,0 +1,168 @@
+\hypertarget{display_8c}{}\doxysection{Core/\+Src/display.c File Reference}
+\label{display_8c}\index{Core/Src/display.c@{Core/Src/display.c}}
+
+
+This file provides code for initialising and communicating with the display module.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}red.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{display_8c_af75f0c295259a026924231d6244e6d14}\label{display_8c_af75f0c295259a026924231d6244e6d14}} 
+void {\bfseries hardware\+\_\+reset} ()
+\begin{DoxyCompactList}\small\item\em Perform a hardware reset on the display Resets the display by writing to the displays hardware reset pin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{display_8c_a0993935dab5558085ba00e3adee08fea}\label{display_8c_a0993935dab5558085ba00e3adee08fea}} 
+void {\bfseries test\+\_\+backlight} ()
+\begin{DoxyCompactList}\small\item\em Test all backlight colors Run through each color of the display to see that they are lighting up. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{display_8c_a6c534d2b8a36411919e5c67aeb88417c}\label{display_8c_a6c534d2b8a36411919e5c67aeb88417c}} 
+void {\bfseries set\+\_\+backlight} (uint8\+\_\+t color, GPIO\+\_\+\+Pin\+State state)
+\begin{DoxyCompactList}\small\item\em Set a backlight color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{display_8c_a414526962a6150dfd5835360a509c36c}{split\+\_\+byte}} (uint8\+\_\+t byte, uint8\+\_\+t $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Split a byte to send to the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{display_8c_a46e9b88cc7f2dc371810e55155a40647}{display\+\_\+transmit}} (uint8\+\_\+t startbyte, uint8\+\_\+t $\ast$bytes, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Send the display data or instructions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{display_8c_aa7c203e793216a18e77c873c78008469}{display\+\_\+send\+\_\+instruction}} (uint8\+\_\+t $\ast$instructions, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Send instruction bytes via spi to the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{display_8c_a2b54b531a4474cd5f4370a2ec6d7dff4}{display\+\_\+write}} (char $\ast$characters, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Write characters to the display where the cursor currently are. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{display_8c_adf2fce95820b95a0a565b288227312e2}{set\+\_\+row}} (uint8\+\_\+t row)
+\begin{DoxyCompactList}\small\item\em Set the cursor on the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{display_8c_a668c37934dc91816447115b25698bb85}{display\+\_\+write\+\_\+row}} (char $\ast$characters, uint16\+\_\+t length, uint8\+\_\+t row)
+\begin{DoxyCompactList}\small\item\em Write text to a specific row on the display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{display_8c_aa8badc0c38d6b6de90a565286678d6a8}\label{display_8c_aa8badc0c38d6b6de90a565286678d6a8}} 
+int {\bfseries clear\+\_\+display} ()
+\begin{DoxyCompactList}\small\item\em Clears the display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}\label{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}} 
+void {\bfseries init\+\_\+display} ()
+\begin{DoxyCompactList}\small\item\em Initialise the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{display_8c_aace5c4986b583cd196150877ba604b71}\label{display_8c_aace5c4986b583cd196150877ba604b71}} 
+GPIO\+\_\+\+Type\+Def $\ast$ {\bfseries ports} \mbox{[}$\,$\mbox{]} = \{Disp\+\_\+\+White\+\_\+\+GPIO\+\_\+\+Port, Disp\+\_\+\+Green\+\_\+\+GPIO\+\_\+\+Port\}
+\item 
+\mbox{\Hypertarget{display_8c_a2d49166fb16cdb7f842d073662e51795}\label{display_8c_a2d49166fb16cdb7f842d073662e51795}} 
+uint16\+\_\+t {\bfseries pins} \mbox{[}$\,$\mbox{]} = \{Disp\+\_\+\+White\+\_\+\+Pin, Disp\+\_\+\+Green\+\_\+\+Pin\}
+\item 
+\mbox{\Hypertarget{display_8c_a2a029d9e4eafd59d948bd67f92a59b14}\label{display_8c_a2a029d9e4eafd59d948bd67f92a59b14}} 
+uint8\+\_\+t {\bfseries rows} \mbox{[}$\,$\mbox{]} = \{0b10000000, 0b10100000, 0b11000000, 0b11100000\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides code for initialising and communicating with the display module. 
+
+\begin{DoxyAuthor}{Author}
+William Asp 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{display_8c_aa7c203e793216a18e77c873c78008469}\label{display_8c_aa7c203e793216a18e77c873c78008469}} 
+\index{display.c@{display.c}!display\_send\_instruction@{display\_send\_instruction}}
+\index{display\_send\_instruction@{display\_send\_instruction}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{display\_send\_instruction()}{display\_send\_instruction()}}
+{\footnotesize\ttfamily int display\+\_\+send\+\_\+instruction (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{instructions,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Send instruction bytes via spi to the display. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em instructions} & A pointer to the instructions to send to the display \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & The number of instructions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{display_8c_a46e9b88cc7f2dc371810e55155a40647}\label{display_8c_a46e9b88cc7f2dc371810e55155a40647}} 
+\index{display.c@{display.c}!display\_transmit@{display\_transmit}}
+\index{display\_transmit@{display\_transmit}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{display\_transmit()}{display\_transmit()}}
+{\footnotesize\ttfamily int display\+\_\+transmit (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{startbyte,  }\item[{uint8\+\_\+t $\ast$}]{bytes,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Send the display data or instructions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em startbyte} & The byte setting that initiates the transmit \\
+\hline
+\mbox{\texttt{ in}}  & {\em bytes} & The bytes that will be sent to the display \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & The number of bytes to send \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{display_8c_a2b54b531a4474cd5f4370a2ec6d7dff4}\label{display_8c_a2b54b531a4474cd5f4370a2ec6d7dff4}} 
+\index{display.c@{display.c}!display\_write@{display\_write}}
+\index{display\_write@{display\_write}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{display\_write()}{display\_write()}}
+{\footnotesize\ttfamily int display\+\_\+write (\begin{DoxyParamCaption}\item[{char $\ast$}]{characters,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Write characters to the display where the cursor currently are. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em characters} & The characters to write \\
+\hline
+{\em length} & The number of characters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{display_8c_a668c37934dc91816447115b25698bb85}\label{display_8c_a668c37934dc91816447115b25698bb85}} 
+\index{display.c@{display.c}!display\_write\_row@{display\_write\_row}}
+\index{display\_write\_row@{display\_write\_row}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{display\_write\_row()}{display\_write\_row()}}
+{\footnotesize\ttfamily int display\+\_\+write\+\_\+row (\begin{DoxyParamCaption}\item[{char $\ast$}]{characters,  }\item[{uint16\+\_\+t}]{length,  }\item[{uint8\+\_\+t}]{row }\end{DoxyParamCaption})}
+
+
+
+Write text to a specific row on the display. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em characters} & The characters to write \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & The number of characters \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & The row to write to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{display_8c_adf2fce95820b95a0a565b288227312e2}\label{display_8c_adf2fce95820b95a0a565b288227312e2}} 
+\index{display.c@{display.c}!set\_row@{set\_row}}
+\index{set\_row@{set\_row}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{set\_row()}{set\_row()}}
+{\footnotesize\ttfamily int set\+\_\+row (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{row }\end{DoxyParamCaption})}
+
+
+
+Set the cursor on the display. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & The row to write to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{display_8c_a414526962a6150dfd5835360a509c36c}\label{display_8c_a414526962a6150dfd5835360a509c36c}} 
+\index{display.c@{display.c}!split\_byte@{split\_byte}}
+\index{split\_byte@{split\_byte}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{split\_byte()}{split\_byte()}}
+{\footnotesize\ttfamily void split\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte,  }\item[{uint8\+\_\+t $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Split a byte to send to the display. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em byte} & The byte to split into two \\
+\hline
+\mbox{\texttt{ out}}  & {\em buffer} & Where to place the two new bytes \\
+\hline
+\end{DoxyParams}
