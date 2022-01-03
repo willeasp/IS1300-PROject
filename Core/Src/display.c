@@ -1,9 +1,12 @@
-/*
- * display.c
- *
- *  Created on: Dec 19, 2021
- *      Author: Dell
- */
+/**
+  ******************************************************************************
+  * @file    display.c
+  * @brief   This file provides code for initialising and communicating with the
+  * display module
+  * @author William Asp
+  ******************************************************************************
+  */
+
 #include "main.h"
 #include "spi.h"
 #include "error.h"
@@ -15,6 +18,7 @@ uint16_t pins[] = {Disp_White_Pin, Disp_Green_Pin};
 
 /**
  * @brief Perform a hardware reset on the display
+ * Resets the display by writing to the displays hardware reset pin
  */
 void hardware_reset () {
     HAL_Delay(5);
@@ -27,6 +31,8 @@ void hardware_reset () {
 
 /**
  * @brief Test all backlight colors
+ * Run through each color of the display to see that
+ * they are lighting up.
  */
 void test_backlight () {
     // TODO add red pwm

@@ -1,9 +1,10 @@
-/*
- * potentiometer.c
- *
- *  Created on: Dec 29, 2021
- *      Author: Dell
- */
+/**
+  ******************************************************************************
+  * @file    potentiometer.c
+  * @brief   This file provides code for reading the potentiometer value
+  * @author William Asp
+  ******************************************************************************
+  */
 
 #include "main.h"
 #include "adc.h"

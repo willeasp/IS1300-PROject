@@ -1,17 +1,10 @@
 /**
   ******************************************************************************
   * @file    uart.c
-  * @brief   This file is epic and contains code for uart communication
-  ******************************************************************************
+  * @brief   This file contains functions for communicating via UART
   * @author William Asp
   ******************************************************************************
   */
-/*
- * uart.c
- *
- *  Created on: Dec 21, 2021
- *      Author: Dell
- */
 
 #include "main.h"
 #include "usart.h"
@@ -23,6 +16,7 @@
 /**
  * @brief Send a string over uart
  * @param[in] message The character array to send
+ * @retval HAL status of uart transmission
  */
 int uart_send (char *buffer, uint16_t length) {
     return HAL_UART_Transmit(&huart5, (uint8_t*)buffer, length, TIMEOUT);
