@@ -31,6 +31,7 @@ jobs:
         doxyfile-path: "./Doxyfile" # default is ./Doxyfile
         # Working directory
         working-directory: "." # default is .
+        enable-latex: true
     
     - name: Deploy pages
       uses: peaceiris/actions-gh-pages@v3
