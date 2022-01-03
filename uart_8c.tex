@@ -1,0 +1,118 @@
+\hypertarget{uart_8c}{}\doxysection{Core/\+Src/uart.c File Reference}
+\label{uart_8c}\index{Core/Src/uart.c@{Core/Src/uart.c}}
+
+
+This file is epic and contains code for uart communication.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{uart_8c_a45ba202b05caf39795aeca91b0ae547e}\label{uart_8c_a45ba202b05caf39795aeca91b0ae547e}} 
+\#define {\bfseries TIMEOUT}~0x\+FFFFFFFF
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{uart_8c_aef6451ab4bd6e3225c37676cde635924}{uart\+\_\+send}} (char $\ast$buffer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Send a string over uart. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8c_afe5847c13185b9347958775c30d44205}{uart\+\_\+receive}} (char $\ast$buffer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Recieve a string over uart. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8c_a6c4e5c25d370f133b8614509e075cd84}{uart\+\_\+println}} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em send a string line to uart \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8c_adb9cf1ab22fe9b6e4165a23e627f4187}{uart\+\_\+printnum}} (uint32\+\_\+t num)
+\begin{DoxyCompactList}\small\item\em Print a number over uart. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8c_af95c4cfe610f4d1a02fe9588f7bc5102}{uart\+\_\+get\+\_\+clock\+\_\+input}} (char $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Let user input the time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is epic and contains code for uart communication. 
+
+\begin{DoxyAuthor}{Author}
+William Asp 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{uart_8c_af95c4cfe610f4d1a02fe9588f7bc5102}\label{uart_8c_af95c4cfe610f4d1a02fe9588f7bc5102}} 
+\index{uart.c@{uart.c}!uart\_get\_clock\_input@{uart\_get\_clock\_input}}
+\index{uart\_get\_clock\_input@{uart\_get\_clock\_input}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_get\_clock\_input()}{uart\_get\_clock\_input()}}
+{\footnotesize\ttfamily void uart\+\_\+get\+\_\+clock\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Let user input the time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em buffer} & The buffer to write to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_a6c4e5c25d370f133b8614509e075cd84}\label{uart_8c_a6c4e5c25d370f133b8614509e075cd84}} 
+\index{uart.c@{uart.c}!uart\_println@{uart\_println}}
+\index{uart\_println@{uart\_println}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_println()}{uart\_println()}}
+{\footnotesize\ttfamily int uart\+\_\+println (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+send a string line to uart 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em string} & The string to send \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_adb9cf1ab22fe9b6e4165a23e627f4187}\label{uart_8c_adb9cf1ab22fe9b6e4165a23e627f4187}} 
+\index{uart.c@{uart.c}!uart\_printnum@{uart\_printnum}}
+\index{uart\_printnum@{uart\_printnum}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_printnum()}{uart\_printnum()}}
+{\footnotesize\ttfamily int uart\+\_\+printnum (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{num }\end{DoxyParamCaption})}
+
+
+
+Print a number over uart. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em num} & The number to be printed over UART \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_afe5847c13185b9347958775c30d44205}\label{uart_8c_afe5847c13185b9347958775c30d44205}} 
+\index{uart.c@{uart.c}!uart\_receive@{uart\_receive}}
+\index{uart\_receive@{uart\_receive}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_receive()}{uart\_receive()}}
+{\footnotesize\ttfamily int uart\+\_\+receive (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Recieve a string over uart. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em buffer} & The place to write the recieved string \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & The amount of data to read \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_aef6451ab4bd6e3225c37676cde635924}\label{uart_8c_aef6451ab4bd6e3225c37676cde635924}} 
+\index{uart.c@{uart.c}!uart\_send@{uart\_send}}
+\index{uart\_send@{uart\_send}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_send()}{uart\_send()}}
+{\footnotesize\ttfamily int uart\+\_\+send (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Send a string over uart. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em message} & The character array to send \\
+\hline
+\end{DoxyParams}
