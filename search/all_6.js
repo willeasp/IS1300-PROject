@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5fpotentiometer_5fvalue_12',['get_potentiometer_value',['../potentiometer_8c.html#aa61afc6c4895e037879ba7dcb20a78c6',1,'potentiometer.c']]],
-  ['gpio_2ec_13',['gpio.c',['../gpio_8c.html',1,'']]]
+  ['init_5fdisplay_18',['init_display',['../display_8c.html#ac079cd712ceeaf40cc0733b0f3a5d860',1,'display.c']]]
 ];

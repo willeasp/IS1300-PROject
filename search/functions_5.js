@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fpotentiometer_5fvalue_103',['get_potentiometer_value',['../potentiometer_8c.html#aa61afc6c4895e037879ba7dcb20a78c6',1,'potentiometer.c']]]
+  ['init_5fdisplay_65',['init_display',['../display_8c.html#ac079cd712ceeaf40cc0733b0f3a5d860',1,'display.c']]]
 ];

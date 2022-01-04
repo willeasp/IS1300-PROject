@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['potentiometer_2ec_82',['potentiometer.c',['../potentiometer_8c.html',1,'']]]
+  ['main_2ec_48',['main.c',['../main_8c.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clear_5fdisplay_96',['clear_display',['../display_8c.html#aa8badc0c38d6b6de90a565286678d6a8',1,'display.c']]]
+  ['error_5fhandler_57',['Error_Handler',['../main_8c.html#a1730ffe1e560465665eb47d9264826f9',1,'main.c']]]
 ];

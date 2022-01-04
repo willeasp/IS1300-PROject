@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -97,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!--header-->
 <div class="contents">
 
-<p>: Main program body  
+<p>: Main program body. This is where the program is initialised.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;main.h&quot;</code><br />
 <code>#include &quot;cmsis_os.h&quot;</code><br />
@@ -130,7 +129,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7fdc88cab173073f3ee9d4af0b4e8c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tx Transfer completed callback.  <a href="main_8c.html#a7fdc88cab173073f3ee9d4af0b4e8c5f">More...</a><br /></td></tr>
 <tr class="separator:a7fdc88cab173073f3ee9d4af0b4e8c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
-<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point.  <a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">More...</a><br /></td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point. This is where everything is initialised.  <a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">More...</a><br /></td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a3b0ad512a6e6c6157440b68d395eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a8a3b0ad512a6e6c6157440b68d395eac">HAL_TIM_PeriodElapsedCallback</a> (TIM_HandleTypeDef *htim)</td></tr>
 <tr class="memdesc:a8a3b0ad512a6e6c6157440b68d395eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Period elapsed callback in non blocking mode.  <a href="main_8c.html#a8a3b0ad512a6e6c6157440b68d395eac">More...</a><br /></td></tr>
@@ -146,7 +145,7 @@ ITStatus&#160;</td><td class="memItemRight" valign="bottom"><b>uartReady</b> = R
 <tr class="separator:aa0003f3404fdaa63a64be6add40150d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>: Main program body </p>
+<div class="textblock"><p>: Main program body. This is where the program is initialised. </p>
 <dl class="section attention"><dt>Attention</dt><dd></dd></dl>
 <h2><center>&copy; Copyright (c) 2021 STMicroelectronics. All rights reserved.</center></h2>
 <p>This software component is licensed by ST under BSD 3-Clause license, the "License"; You may not use this file except in compliance with the License. You may obtain a copy of the License at: opensource.org/licenses/BSD-3-Clause </p>
@@ -292,7 +291,8 @@ ITStatus&#160;</td><td class="memItemRight" valign="bottom"><b>uartReady</b> = R
       </table>
 </div><div class="memdoc">
 
-<p>The application entry point. </p>
+<p>The application entry point. This is where everything is initialised. </p>
+<p>The main function initialises all peripherals and starts up the program by taking user input and initialising the hardware before handing over the control to the FreeRTOS scheduler.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>

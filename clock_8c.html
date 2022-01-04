@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IS1300 Project: Core/Src/tim.c File Reference</title>
+<title>IS1300 Project: Core/Src/clock.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -90,59 +89,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">tim.c File Reference</div>  </div>
+<div class="title">clock.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This file provides code for the configuration of the TIM instances.  
+<p>This file provides code for starting and getting the rtc time.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;tim.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
+<code>#include &quot;rtc.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7912f2916786a2c33cb6fb8259ade58c"><td class="memItemLeft" align="right" valign="top"><a id="a7912f2916786a2c33cb6fb8259ade58c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MX_TIM3_Init</b> (void)</td></tr>
-<tr class="separator:a7912f2916786a2c33cb6fb8259ade58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59716af159bfbbb6023b31354fb23af8"><td class="memItemLeft" align="right" valign="top"><a id="a59716af159bfbbb6023b31354fb23af8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_TIM_Base_MspInit</b> (TIM_HandleTypeDef *tim_baseHandle)</td></tr>
-<tr class="separator:a59716af159bfbbb6023b31354fb23af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708f19bbc41b292fccf38f2d9796c46a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tim_8c.html#a708f19bbc41b292fccf38f2d9796c46a">HAL_TIM_MspPostInit</a> (TIM_HandleTypeDef *timHandle)</td></tr>
-<tr class="separator:a708f19bbc41b292fccf38f2d9796c46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee8ed7d3ebb3a217c27ac10af86ce2f"><td class="memItemLeft" align="right" valign="top"><a id="adee8ed7d3ebb3a217c27ac10af86ce2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_TIM_Base_MspDeInit</b> (TIM_HandleTypeDef *tim_baseHandle)</td></tr>
-<tr class="separator:adee8ed7d3ebb3a217c27ac10af86ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memItemLeft" align="right" valign="top"><a id="aac3d2c59ee0e3bbae1b99529a154eb62"></a>
-TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>htim3</b></td></tr>
-<tr class="separator:aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba9de910b573a046bda65cf7942e56f"><td class="memItemLeft" align="right" valign="top"><a id="a2ba9de910b573a046bda65cf7942e56f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8c.html#a2ba9de910b573a046bda65cf7942e56f">start_clock</a> (uint8_t hours, uint8_t minutes, uint8_t seconds)</td></tr>
+<tr class="memdesc:a2ba9de910b573a046bda65cf7942e56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the RTC clock <br /></td></tr>
+<tr class="separator:a2ba9de910b573a046bda65cf7942e56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b63032a51751b3b5788afc760c6020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clock_8c.html#af2b63032a51751b3b5788afc760c6020">get_time</a> (RTC_TimeTypeDef *time)</td></tr>
+<tr class="memdesc:af2b63032a51751b3b5788afc760c6020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current RTC time.  <a href="clock_8c.html#af2b63032a51751b3b5788afc760c6020">More...</a><br /></td></tr>
+<tr class="separator:af2b63032a51751b3b5788afc760c6020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file provides code for the configuration of the TIM instances. </p>
-<dl class="section attention"><dt>Attention</dt><dd></dd></dl>
-<h2><center>&copy; Copyright (c) 2021 STMicroelectronics. All rights reserved.</center></h2>
-<p>This software component is licensed by ST under Ultimate Liberty license SLA0044, the "License"; You may not use this file except in compliance with the License. You may obtain a copy of the License at: www.st.com/SLA0044 </p>
+<div class="textblock"><p>This file provides code for starting and getting the rtc time. </p>
+<dl class="section author"><dt>Author</dt><dd>William Asp </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a708f19bbc41b292fccf38f2d9796c46a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a708f19bbc41b292fccf38f2d9796c46a">&#9670;&nbsp;</a></span>HAL_TIM_MspPostInit()</h2>
+<a id="af2b63032a51751b3b5788afc760c6020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b63032a51751b3b5788afc760c6020">&#9670;&nbsp;</a></span>get_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void HAL_TIM_MspPostInit </td>
+          <td class="memname">void get_time </td>
           <td>(</td>
-          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>timHandle</em></td><td>)</td>
+          <td class="paramtype">RTC_TimeTypeDef *&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TIM3 GPIO Configuration PC7 ---&mdash;&gt; TIM3_CH2</p>
+
+<p>Get the current RTC time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">time</td><td>The current time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the time struct </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IS1300 Project: STM32L4xx_System_Private_TypesDefinitions</title>
+<title>IS1300 Project: Core/Src/error.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -43,8 +43,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,7 +62,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -78,11 +82,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">STM32L4xx_System_Private_TypesDefinitions<div class="ingroups"><a class="el" href="group___c_m_s_i_s.html">CMSIS</a> &raquo; <a class="el" href="group__stm32l4xx__system.html">Stm32l4xx_system</a></div></div>  </div>
+<div class="title">error.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This file provides code for handling errors when they appear.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3c215e38d85a8d3c7e6dcc57b9581784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8c.html#a3c215e38d85a8d3c7e6dcc57b9581784">handle_error</a> ()</td></tr>
+<tr class="memdesc:a3c215e38d85a8d3c7e6dcc57b9581784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show that an error has occured by turning on LD2.  <a href="error_8c.html#a3c215e38d85a8d3c7e6dcc57b9581784">More...</a><br /></td></tr>
+<tr class="separator:a3c215e38d85a8d3c7e6dcc57b9581784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file provides code for handling errors when they appear. </p>
+<dl class="section author"><dt>Author</dt><dd>William Asp </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3c215e38d85a8d3c7e6dcc57b9581784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c215e38d85a8d3c7e6dcc57b9581784">&#9670;&nbsp;</a></span>handle_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handle_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show that an error has occured by turning on LD2. </p>
+<p>This function only turns on LD2 then runs in a while loop. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
