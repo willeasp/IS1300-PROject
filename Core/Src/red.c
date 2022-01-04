@@ -1,9 +1,11 @@
-/*
- * red.c
- *
- *  Created on: Dec 22, 2021
- *      Author: Dell
- */
+/**
+  ******************************************************************************
+  * @file    red.c
+  * @brief   This file provides code for controlling the brightness of the red
+  * backlight.
+  * @author William Asp
+  ******************************************************************************
+  */
 
 
 #include "main.h"
@@ -11,6 +13,9 @@
 #include "uart.h"
 #include "string.h"
 
+/**
+ * @brief The timer channel that is the PWM control
+ */
 #define CHANNEL TIM_CHANNEL_2
 
 /**

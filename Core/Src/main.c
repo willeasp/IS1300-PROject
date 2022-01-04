@@ -2,7 +2,7 @@
 /**
   ******************************************************************************
   * @file           : main.c
-  * @brief          : Main program body
+  * @brief          : Main program body. This is where the program is initialised.
   ******************************************************************************
   * @attention
   *
@@ -74,7 +74,11 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *UartHandle);
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
+  * @brief  The application entry point. This is where everything is initialised.
+  *
+  * The main function initialises all peripherals and starts up the program by taking user input and
+  * initialising the hardware before handing over the control to the FreeRTOS scheduler.
+  *
   * @retval int
   */
 int main(void)

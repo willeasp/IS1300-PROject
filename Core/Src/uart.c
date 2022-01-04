@@ -11,12 +11,15 @@
 #include "string.h"
 #include "stdio.h"
 
+/**
+ * @brief The polling timeout
+ */
 #define TIMEOUT 0xFFFFFFFF
 
 /**
  * @brief Send a string over uart
  * @param[in] message The character array to send
- * @retval HAL status of uart transmission
+ * @return HAL status of uart transmission
  */
 int uart_send (char *buffer, uint16_t length) {
     return HAL_UART_Transmit(&huart5, (uint8_t*)buffer, length, TIMEOUT);
@@ -26,6 +29,7 @@ int uart_send (char *buffer, uint16_t length) {
  * @brief Recieve a string over uart
  * @param[out] buffer The place to write the recieved string
  * @param[in] length The amount of data to read
+ * @return HAL status of uart transmission
  */
 int uart_receive (char *buffer, uint16_t length) {
     return HAL_UART_Receive(&huart5, (uint8_t *)buffer, length, TIMEOUT);
@@ -34,6 +38,7 @@ int uart_receive (char *buffer, uint16_t length) {
 /**
  * @brief send a string line to uart
  * @param[in] string The string to send
+ * @return HAL status of uart transmission
  */
 int uart_println (char *string) {
     uart_send(string, strlen(string));
@@ -43,6 +48,7 @@ int uart_println (char *string) {
 /**
  * @brief Print a number over uart
  * @param[in] num The number to be printed over UART
+ * @return HAL status of uart transmission
  */
 int uart_printnum (uint32_t num) {
     char buf[20];
@@ -53,6 +59,7 @@ int uart_printnum (uint32_t num) {
 /**
  * @brief Let user input the time
  * @param[out] buffer The buffer to write to
+ * @retval buffer The user entered time string
  */
 void uart_get_clock_input (char *buffer) {
     uart_println("Please enter the time in HH:MM:SS format!");

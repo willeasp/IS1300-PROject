@@ -1,9 +1,10 @@
-/*
- * clock.c
- *
- *  Created on: Dec 21, 2021
- *      Author: Dell
- */
+/**
+  ******************************************************************************
+  * @file    clock.c
+  * @brief   This file provides code for starting and getting the rtc time
+  * @author William Asp
+  ******************************************************************************
+  */
 
 #include "main.h"
 #include "rtc.h"

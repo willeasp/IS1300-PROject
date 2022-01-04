@@ -12,8 +12,13 @@
 #include "error.h"
 #include "red.h"
 
-
+/**
+ * @brief The display backlight ports (without red)
+ */
 GPIO_TypeDef* ports[] = {Disp_White_GPIO_Port, Disp_Green_GPIO_Port};
+/**
+ * @brief The display backlight pins (without red)
+ */
 uint16_t pins[] = {Disp_White_Pin, Disp_Green_Pin};
 
 /**
@@ -111,7 +116,11 @@ int display_write (char *characters, uint16_t length) {
     return display_transmit(0b01011111, (uint8_t*)characters, length);
 }
 
+/**
+ * @brief The displays internal row addresses
+ */
 uint8_t rows[] = {0b10000000, 0b10100000, 0b11000000, 0b11100000};
+
 /**
  * @brief Set the cursor on the display
  * @param[in] row The row to write to
