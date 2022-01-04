@@ -2,7 +2,7 @@
 \label{main_8c}\index{Core/Src/main.c@{Core/Src/main.c}}
 
 
-\+: Main program body  
+\+: Main program body. This is where the program is initialised.  
 
 
 {\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
@@ -32,7 +32,7 @@ void \mbox{\hyperlink{main_8c_a64a600961d9507504c5d6af42adc6c67}{HAL\+\_\+\+UART
 void \mbox{\hyperlink{main_8c_a7fdc88cab173073f3ee9d4af0b4e8c5f}{HAL\+\_\+\+UART\+\_\+\+Tx\+Cplt\+Callback}} (UART\+\_\+\+Handle\+Type\+Def $\ast$Uart\+Handle)
 \begin{DoxyCompactList}\small\item\em Tx Transfer completed callback. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
-\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The application entry point. This is where everything is initialised. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8c_a8a3b0ad512a6e6c6157440b68d395eac}{HAL\+\_\+\+TIM\+\_\+\+Period\+Elapsed\+Callback}} (TIM\+\_\+\+Handle\+Type\+Def $\ast$htim)
 \begin{DoxyCompactList}\small\item\em Period elapsed callback in non blocking mode. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
@@ -46,7 +46,7 @@ ITStatus {\bfseries uart\+Ready} = RESET
 
 
 \doxysubsection{Detailed Description}
-\+: Main program body 
+\+: Main program body. This is where the program is initialised. 
 
 \begin{DoxyAttention}{Attention}
 
@@ -148,7 +148,9 @@ This example shows a simple way to report end of IT Tx transfer, and you can add
 
 
 
-The application entry point. 
+The application entry point. This is where everything is initialised. 
+
+The main function initialises all peripherals and starts up the program by taking user input and initialising the hardware before handing over the control to the Free\+RTOS scheduler.
 
 
 \begin{DoxyRetVals}{Return values}

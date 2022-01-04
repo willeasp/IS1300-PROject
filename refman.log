@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.1.3)  3 JAN 2022 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.1.4)  4 JAN 2022 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,7 +850,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 169.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 169.
- [1] [2] [3] [4]
+ [1] [2]
 Package hyperref Info: Option `pageanchor' set `true' on input line 171.
 
 Chapter 1.
@@ -866,7 +866,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 174.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 174.
-(./modules.tex
+(./files.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
@@ -876,121 +876,113 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 Chapter 2.
-(./files.tex) [3] [4
+(./clock_8c.tex
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 8.
 
-]
-Chapter 3.
-(./group___c_m_s_i_s.tex
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-.
- (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
+(Font)              scaled to size 10.79993pt on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+3.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
-)
-(./group__stm32l4xx__system.tex)
-(./group___s_t_m32_l4xx___system___private___includes.tex)
-(./group___s_t_m32_l4xx___system___private___types_definitions.tex)
-(./group___s_t_m32_l4xx___system___private___defines.tex [5]
+(Font)              scaled to size 8.99994pt on input line 13.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 22.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 22
-.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-))
-(./group___s_t_m32_l4xx___system___private___macros.tex)
-(./group___s_t_m32_l4xx___system___private___variables.tex)
-(./group___s_t_m32_l4xx___system___private___function_prototypes.tex)
-(./group___s_t_m32_l4xx___system___private___functions.tex
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 7.
- [6]
+(Font)              scaled to size 8.09995pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 7.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 9.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 20.
+(Font)              scaled to size 8.09995pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 26.
+(Font)              scaled to size 8.99994pt on input line 23.
 
-Underfull \hbox (badness 10000) detected at line 26
+Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-[7]) [8]
-Chapter 4.
-(./adc_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 29
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 33.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 33.
+[3]
+Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
-LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 32.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 41.
-[9
-
-]) (./display_8c.tex
+) (./display_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-[10]
+[4]
 Underfull \hbox (badness 10000) detected at line 59
 [][][]
  []
 
-[11] [12]) (./gpio_8c.tex
+[5] [6]) (./error_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
-) (./main_8c.tex
+) (./freertos_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--24
+
+ []
+
+[7]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 34.
+
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+[8] [9] [10]) (./main_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--23
 
  []
 
-[14]
+[11]
 Underfull \hbox (badness 10000) detected at line 51
 [][][]
  []
 
-[15]
+LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 54.
+
 Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
+[12]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 101.
 
 Underfull \hbox (badness 10000) detected at line 112
 [][][]
  []
 
-[16]
+
 Underfull \hbox (badness 10000) detected at line 135
 [][][]
  []
 
-[17]) (./potentiometer_8c.tex
+[13] [14]) (./potentiometer_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
@@ -1000,354 +992,22 @@ Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-[18]
+
 Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
-) (./rtc_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+) (./red_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-
-Underfull \hbox (badness 10000) detected at line 30
+[15]
+Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
 
-) (./spi_8c.tex [19]
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 30
-[][][]
- []
-
-[20]) (./stm32l4xx__hal__msp_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 19
-[][][]
- []
-
-) (./stm32l4xx__hal__timebase__tim_8c.tex [21]
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 30
-[][][]
- []
-
-[22]
-Underfull \hbox (badness 10000) detected at line 48
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 71
-[][][]
- []
-
-[23]
-Underfull \hbox (badness 10000) detected at line 94
-[][][]
- []
-
-) (./stm32l4xx__it_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-[24]
-Underfull \hbox (badness 10000) detected at line 51
-[][][]
- []
-
-) (./syscalls_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--16
-
- []
-
-[25]
-Underfull \hbox (badness 10000) detected at line 87
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 94
-[][][]
- []
-
-) (./sysmem_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 20
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 27
-[][][]
- []
-
-[26] [27]
-Underfull \hbox (badness 10000) detected at line 60
-[][][]
- []
-
-) (./system__stm32l4xx_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 41
-[][][]
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 54.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 55.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 56.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 61.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 61.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 61.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 64.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 64.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 64.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 67.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-[28]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vert' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 70.
-
-
-Underfull \hbox (badness 10000) detected at line 73
-[][][]
- []
-
-) (./tim_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-[29]
-Underfull \hbox (badness 10000) detected at line 34
-[][][]
- []
-
-) (./uart_8c.tex
+) (./uart_8c.tex [16]
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
@@ -1357,49 +1017,61 @@ Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
-[30] [31]) (./usart_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 30
+[17]
+Underfull \hbox (badness 10000) detected at line 77
 [][][]
  []
 
-) [32] (./refman.ind [33
+
+Underfull \hbox (badness 10000) detected at line 95
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
 
 
+Underfull \hbox (badness 10000) detected at line 133
+[][][]
+ []
 
-] [34])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
+) [19] [20
+
+] (./refman.ind [21
+
+
+] [22
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: E02C7B32ABFB7705D6CEED8D485D4EDA;27300.
+(rerunfilecheck)             Checksum: E731D09CB248BE610CF95579B0249169;12047.
  ) 
 Here is how much of TeX's memory you used:
- 17238 strings out of 480478
- 256917 string characters out of 5905925
- 557341 words of memory out of 5000000
- 32511 multiletter control sequences out of 15000+600000
+ 16826 strings out of 480478
+ 244202 string characters out of 5905925
+ 530381 words of memory out of 5000000
+ 32335 multiletter control sequences out of 15000+600000
  590262 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,96p,938b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,96p,938b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (40 pages, 171806 bytes).
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
+fb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.p
+fb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (26 pages, 122430 bytes).
 PDF statistics:
- 1389 PDF objects out of 1440 (max. 8388607)
- 1324 compressed objects within 14 object streams
- 383 named destinations out of 1000 (max. 500000)
- 1033 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 659 compressed objects within 7 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

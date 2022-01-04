@@ -1,0 +1,48 @@
+\hypertarget{red_8c}{}\doxysection{Core/\+Src/red.c File Reference}
+\label{red_8c}\index{Core/Src/red.c@{Core/Src/red.c}}
+
+
+This file provides code for controlling the brightness of the red backlight.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tim.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{red_8c_ace6a11e892466500d47d1f45f042bc53}\label{red_8c_ace6a11e892466500d47d1f45f042bc53}} 
+\#define \mbox{\hyperlink{red_8c_ace6a11e892466500d47d1f45f042bc53}{CHANNEL}}~TIM\+\_\+\+CHANNEL\+\_\+2
+\begin{DoxyCompactList}\small\item\em The timer channel that is the PWM control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{red_8c_a99370d95aad0f8ac0324e00db820393e}{set\+\_\+brightness}} (double brightness)
+\begin{DoxyCompactList}\small\item\em Change the PWM pulse width of the red background light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides code for controlling the brightness of the red backlight. 
+
+\begin{DoxyAuthor}{Author}
+William Asp 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{red_8c_a99370d95aad0f8ac0324e00db820393e}\label{red_8c_a99370d95aad0f8ac0324e00db820393e}} 
+\index{red.c@{red.c}!set\_brightness@{set\_brightness}}
+\index{set\_brightness@{set\_brightness}!red.c@{red.c}}
+\doxysubsubsection{\texorpdfstring{set\_brightness()}{set\_brightness()}}
+{\footnotesize\ttfamily void set\+\_\+brightness (\begin{DoxyParamCaption}\item[{double}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Change the PWM pulse width of the red background light. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em brightness} & The brightness of the backlight from 0 to 1 \\
+\hline
+\end{DoxyParams}

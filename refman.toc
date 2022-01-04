@@ -1,130 +1,59 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Module Index}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Modules}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Module Documentation}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}CMSIS}{5}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Stm32l4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system}{5}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{5}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Includes}{5}{section.3.3}%
-\contentsline {section}{\numberline {3.4}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Definitions}{5}{section.3.4}%
-\contentsline {section}{\numberline {3.5}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Defines}{5}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{6}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Macro Definition Documentation}{6}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}HSE\_VALUE}{6}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}HSI\_VALUE}{6}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}MSI\_VALUE}{6}{subsubsection.3.5.2.3}%
-\contentsline {section}{\numberline {3.6}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Macros}{6}{section.3.6}%
-\contentsline {section}{\numberline {3.7}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Variables}{6}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{6}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Variable Documentation}{6}{subsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.1}MSIRangeTable}{7}{subsubsection.3.7.2.1}%
-\contentsline {section}{\numberline {3.8}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Function\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prototypes}{7}{section.3.8}%
-\contentsline {section}{\numberline {3.9}STM32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions}{7}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{7}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Function Documentation}{7}{subsection.3.9.2}%
-\contentsline {subsubsection}{\numberline {3.9.2.1}SystemCoreClockUpdate()}{7}{subsubsection.3.9.2.1}%
-\contentsline {subsubsection}{\numberline {3.9.2.2}SystemInit()}{8}{subsubsection.3.9.2.2}%
-\contentsline {chapter}{\numberline {4}File Documentation}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/adc.c File Reference}{9}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{9}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{10}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.1}HAL\_ADC\_MspDeInit()}{10}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {4.1.2.2}HAL\_ADC\_MspInit()}{10}{subsubsection.4.1.2.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.3}MX\_ADC1\_Init()}{10}{subsubsection.4.1.2.3}%
-\contentsline {section}{\numberline {4.2}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/display.c File Reference}{10}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{11}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{11}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}display\_send\_instruction()}{11}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}display\_transmit()}{12}{subsubsection.4.2.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.3}display\_write()}{12}{subsubsection.4.2.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.2.4}display\_write\_row()}{12}{subsubsection.4.2.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.2.5}set\_row()}{13}{subsubsection.4.2.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.2.6}split\_byte()}{13}{subsubsection.4.2.2.6}%
-\contentsline {section}{\numberline {4.3}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/gpio.c File Reference}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{14}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{14}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}MX\_GPIO\_Init()}{14}{subsubsection.4.3.2.1}%
-\contentsline {section}{\numberline {4.4}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/main.c File Reference}{14}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{15}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Function Documentation}{15}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Error\_Handler()}{15}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}HAL\_TIM\_PeriodElapsedCallback()}{16}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}HAL\_UART\_RxCpltCallback()}{16}{subsubsection.4.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.4.2.4}HAL\_UART\_TxCpltCallback()}{17}{subsubsection.4.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.4.2.5}main()}{17}{subsubsection.4.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.4.2.6}MX\_FREERTOS\_Init()}{17}{subsubsection.4.4.2.6}%
-\contentsline {subsubsection}{\numberline {4.4.2.7}SystemClock\_Config()}{18}{subsubsection.4.4.2.7}%
-\contentsline {section}{\numberline {4.5}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/potentiometer.c File Reference}{18}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{18}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{18}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}get\_potentiometer\_value()}{19}{subsubsection.4.5.2.1}%
-\contentsline {section}{\numberline {4.6}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/rtc.c File Reference}{19}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{19}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{19}{subsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.2.1}HAL\_RTC\_MspInit()}{20}{subsubsection.4.6.2.1}%
-\contentsline {subsubsection}{\numberline {4.6.2.2}MX\_RTC\_Init()}{20}{subsubsection.4.6.2.2}%
-\contentsline {section}{\numberline {4.7}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/spi.c File Reference}{20}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{20}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{21}{subsection.4.7.2}%
-\contentsline {subsubsection}{\numberline {4.7.2.1}HAL\_SPI\_MspDeInit()}{21}{subsubsection.4.7.2.1}%
-\contentsline {subsubsection}{\numberline {4.7.2.2}HAL\_SPI\_MspInit()}{21}{subsubsection.4.7.2.2}%
-\contentsline {section}{\numberline {4.8}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32l4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}msp.c File Reference}{21}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{21}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Function Documentation}{22}{subsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.2.1}HAL\_MspInit()}{22}{subsubsection.4.8.2.1}%
-\contentsline {section}{\numberline {4.9}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32l4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}timebase\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tim.c File Reference}{22}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{22}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Function Documentation}{23}{subsection.4.9.2}%
-\contentsline {subsubsection}{\numberline {4.9.2.1}HAL\_InitTick()}{23}{subsubsection.4.9.2.1}%
-\contentsline {subsubsection}{\numberline {4.9.2.2}HAL\_ResumeTick()}{23}{subsubsection.4.9.2.2}%
-\contentsline {subsubsection}{\numberline {4.9.2.3}HAL\_SuspendTick()}{24}{subsubsection.4.9.2.3}%
-\contentsline {section}{\numberline {4.10}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32l4xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}it.c File Reference}{24}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{25}{subsection.4.10.1}%
-\contentsline {section}{\numberline {4.11}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/syscalls.c File Reference}{25}{section.4.11}%
-\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{26}{subsection.4.11.1}%
-\contentsline {section}{\numberline {4.12}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/sysmem.c File Reference}{26}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{27}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Function Documentation}{27}{subsection.4.12.2}%
-\contentsline {subsubsection}{\numberline {4.12.2.1}\_sbrk()}{27}{subsubsection.4.12.2.1}%
-\contentsline {section}{\numberline {4.13}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/system\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stm32l4xx.c File Reference}{28}{section.4.13}%
-\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{28}{subsection.4.13.1}%
-\contentsline {subsection}{\numberline {4.13.2}This file configures the system clock as follows\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{29}{subsection.4.13.2}%
-\contentsline {subsubsection}{\numberline {4.13.2.1}System Clock source $\vert $ MSI}{29}{subsubsection.4.13.2.1}%
-\contentsline {subsubsection}{\numberline {4.13.2.2}SYSCLK(\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hz) $\vert $ 4000000}{29}{subsubsection.4.13.2.2}%
-\contentsline {subsubsection}{\numberline {4.13.2.3}HCLK(\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hz) $\vert $ 4000000}{29}{subsubsection.4.13.2.3}%
-\contentsline {subsubsection}{\numberline {4.13.2.4}AHB Prescaler $\vert $ 1}{29}{subsubsection.4.13.2.4}%
-\contentsline {subsubsection}{\numberline {4.13.2.5}APB1 Prescaler $\vert $ 1}{29}{subsubsection.4.13.2.5}%
-\contentsline {subsubsection}{\numberline {4.13.2.6}APB2 Prescaler $\vert $ 1}{29}{subsubsection.4.13.2.6}%
-\contentsline {subsubsection}{\numberline {4.13.2.7}PLL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M $\vert $ 1}{29}{subsubsection.4.13.2.7}%
-\contentsline {subsubsection}{\numberline {4.13.2.8}PLL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}N $\vert $ 8}{29}{subsubsection.4.13.2.8}%
-\contentsline {subsubsection}{\numberline {4.13.2.9}PLL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P $\vert $ 7}{29}{subsubsection.4.13.2.9}%
-\contentsline {subsubsection}{\numberline {4.13.2.10}PLL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Q $\vert $ 2}{29}{subsubsection.4.13.2.10}%
-\contentsline {subsubsection}{\numberline {4.13.2.11}PLL\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R $\vert $ 2}{29}{subsubsection.4.13.2.11}%
-\contentsline {subsubsection}{\numberline {4.13.2.12}PLLSAI1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P $\vert $ NA}{29}{subsubsection.4.13.2.12}%
-\contentsline {subsubsection}{\numberline {4.13.2.13}PLLSAI1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Q $\vert $ NA}{29}{subsubsection.4.13.2.13}%
-\contentsline {subsubsection}{\numberline {4.13.2.14}PLLSAI1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R $\vert $ NA}{29}{subsubsection.4.13.2.14}%
-\contentsline {subsubsection}{\numberline {4.13.2.15}PLLSAI2\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P $\vert $ NA}{29}{subsubsection.4.13.2.15}%
-\contentsline {subsubsection}{\numberline {4.13.2.16}PLLSAI2\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Q $\vert $ NA}{29}{subsubsection.4.13.2.16}%
-\contentsline {subsubsection}{\numberline {4.13.2.17}PLLSAI2\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R $\vert $ NA}{29}{subsubsection.4.13.2.17}%
-\contentsline {subsubsection}{\numberline {4.13.2.18}SDIO and RNG clock $\vert $}{29}{subsubsection.4.13.2.18}%
-\contentsline {section}{\numberline {4.14}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/tim.c File Reference}{29}{section.4.14}%
-\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{30}{subsection.4.14.1}%
-\contentsline {subsection}{\numberline {4.14.2}Function Documentation}{30}{subsection.4.14.2}%
-\contentsline {subsubsection}{\numberline {4.14.2.1}HAL\_TIM\_MspPostInit()}{30}{subsubsection.4.14.2.1}%
-\contentsline {section}{\numberline {4.15}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/uart.c File Reference}{30}{section.4.15}%
-\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{30}{subsection.4.15.1}%
-\contentsline {subsection}{\numberline {4.15.2}Function Documentation}{31}{subsection.4.15.2}%
-\contentsline {subsubsection}{\numberline {4.15.2.1}uart\_get\_clock\_input()}{31}{subsubsection.4.15.2.1}%
-\contentsline {subsubsection}{\numberline {4.15.2.2}uart\_println()}{31}{subsubsection.4.15.2.2}%
-\contentsline {subsubsection}{\numberline {4.15.2.3}uart\_printnum()}{31}{subsubsection.4.15.2.3}%
-\contentsline {subsubsection}{\numberline {4.15.2.4}uart\_receive()}{31}{subsubsection.4.15.2.4}%
-\contentsline {subsubsection}{\numberline {4.15.2.5}uart\_send()}{31}{subsubsection.4.15.2.5}%
-\contentsline {section}{\numberline {4.16}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/usart.c File Reference}{32}{section.4.16}%
-\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{32}{subsection.4.16.1}%
-\contentsline {subsection}{\numberline {4.16.2}Function Documentation}{32}{subsection.4.16.2}%
-\contentsline {subsubsection}{\numberline {4.16.2.1}HAL\_UART\_MspDeInit()}{32}{subsubsection.4.16.2.1}%
-\contentsline {subsubsection}{\numberline {4.16.2.2}HAL\_UART\_MspInit()}{32}{subsubsection.4.16.2.2}%
-\contentsline {chapter}{Index}{33}{section*.47}%
+\contentsline {chapter}{\numberline {1}File Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}File List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Documentation}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/clock.c File Reference}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Function Documentation}{3}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}get\_time()}{3}{subsubsection.2.1.2.1}%
+\contentsline {section}{\numberline {2.2}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/display.c File Reference}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Function Documentation}{5}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}display\_send\_instruction()}{5}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}display\_transmit()}{5}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}display\_write()}{5}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}display\_write\_row()}{6}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}set\_row()}{6}{subsubsection.2.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.2.6}split\_byte()}{6}{subsubsection.2.2.2.6}%
+\contentsline {section}{\numberline {2.3}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/error.c File Reference}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Function Documentation}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}handle\_error()}{7}{subsubsection.2.3.2.1}%
+\contentsline {section}{\numberline {2.4}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/freertos.c File Reference}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Function Documentation}{9}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}MX\_FREERTOS\_Init()}{9}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}startBacklightTask()}{9}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}startClockTask()}{10}{subsubsection.2.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}StartDefaultTask()}{10}{subsubsection.2.4.2.4}%
+\contentsline {subsection}{\numberline {2.4.3}Variable Documentation}{10}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3.1}backlightTask\_attributes}{10}{subsubsection.2.4.3.1}%
+\contentsline {subsubsection}{\numberline {2.4.3.2}clockTask\_attributes}{11}{subsubsection.2.4.3.2}%
+\contentsline {subsubsection}{\numberline {2.4.3.3}defaultTask\_attributes}{11}{subsubsection.2.4.3.3}%
+\contentsline {section}{\numberline {2.5}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/main.c File Reference}{11}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Function Documentation}{12}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}Error\_Handler()}{12}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}HAL\_TIM\_PeriodElapsedCallback()}{12}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}HAL\_UART\_RxCpltCallback()}{13}{subsubsection.2.5.2.3}%
+\contentsline {subsubsection}{\numberline {2.5.2.4}HAL\_UART\_TxCpltCallback()}{13}{subsubsection.2.5.2.4}%
+\contentsline {subsubsection}{\numberline {2.5.2.5}main()}{14}{subsubsection.2.5.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.2.6}MX\_FREERTOS\_Init()}{14}{subsubsection.2.5.2.6}%
+\contentsline {subsubsection}{\numberline {2.5.2.7}SystemClock\_Config()}{14}{subsubsection.2.5.2.7}%
+\contentsline {section}{\numberline {2.6}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/potentiometer.c File Reference}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{15}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Function Documentation}{15}{subsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.2.1}get\_potentiometer\_value()}{15}{subsubsection.2.6.2.1}%
+\contentsline {section}{\numberline {2.7}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/red.c File Reference}{16}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Detailed Description}{16}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Function Documentation}{16}{subsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}set\_brightness()}{16}{subsubsection.2.7.2.1}%
+\contentsline {section}{\numberline {2.8}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/uart.c File Reference}{17}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Detailed Description}{17}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Function Documentation}{17}{subsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.2.1}uart\_get\_clock\_input()}{17}{subsubsection.2.8.2.1}%
+\contentsline {subsubsection}{\numberline {2.8.2.2}uart\_println()}{18}{subsubsection.2.8.2.2}%
+\contentsline {subsubsection}{\numberline {2.8.2.3}uart\_printnum()}{18}{subsubsection.2.8.2.3}%
+\contentsline {subsubsection}{\numberline {2.8.2.4}uart\_receive()}{18}{subsubsection.2.8.2.4}%
+\contentsline {subsubsection}{\numberline {2.8.2.5}uart\_send()}{19}{subsubsection.2.8.2.5}%
+\contentsline {chapter}{Index}{21}{section*.16}%

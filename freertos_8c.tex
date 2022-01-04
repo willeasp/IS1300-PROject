@@ -1,0 +1,197 @@
+\hypertarget{freertos_8c}{}\doxysection{Core/\+Src/freertos.c File Reference}
+\label{freertos_8c}\index{Core/Src/freertos.c@{Core/Src/freertos.c}}
+
+
+This file contains the code that the program consists of, divided into tasks that will be run by the Free\+RTOS scheduler.  
+
+
+{\ttfamily \#include \char`\"{}Free\+RTOS.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cmsis\+\_\+os.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tim.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}red.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}potentiometer.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{freertos_8c_ac8d5e6e525a3a85550ed6aa7735f7c14}\label{freertos_8c_ac8d5e6e525a3a85550ed6aa7735f7c14}} 
+\#define {\bfseries POT\+\_\+\+MAX}~4066
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{freertos_8c_a99d0fdb0434092bcb24d9c9af917e4e9}{Start\+Default\+Task}} (void $\ast$argument)
+\begin{DoxyCompactList}\small\item\em Function implementing the default\+Task thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{freertos_8c_afd957356727fca7d1dfbb09c3a1f0f40}{start\+Backlight\+Task}} (void $\ast$argument)
+\begin{DoxyCompactList}\small\item\em Function implementing the backlight\+Task thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{freertos_8c_a14c240f717f2b1c86b0ce94fc47773dd}{start\+Clock\+Task}} (void $\ast$argument)
+\begin{DoxyCompactList}\small\item\em Function implementing the clock\+Task thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{freertos_8c_abade755e13d07c10889ae83143656158}{MX\+\_\+\+FREERTOS\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Free\+RTOS initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{freertos_8c_a6a263905468b0c37de4ee5e50ede4e74}\label{freertos_8c_a6a263905468b0c37de4ee5e50ede4e74}} 
+os\+Thread\+Id\+\_\+t {\bfseries default\+Task\+Handle}
+\item 
+const os\+Thread\+Attr\+\_\+t {\bfseries default\+Task\+\_\+attributes}
+\item 
+\mbox{\Hypertarget{freertos_8c_abfaea2f8b6afb3665e5e15162bde2127}\label{freertos_8c_abfaea2f8b6afb3665e5e15162bde2127}} 
+os\+Thread\+Id\+\_\+t {\bfseries backlight\+Task\+Handle}
+\item 
+const os\+Thread\+Attr\+\_\+t {\bfseries backlight\+Task\+\_\+attributes}
+\item 
+\mbox{\Hypertarget{freertos_8c_a98379acb28431967f822daffb3a08307}\label{freertos_8c_a98379acb28431967f822daffb3a08307}} 
+os\+Thread\+Id\+\_\+t {\bfseries clock\+Task\+Handle}
+\item 
+const os\+Thread\+Attr\+\_\+t {\bfseries clock\+Task\+\_\+attributes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the code that the program consists of, divided into tasks that will be run by the Free\+RTOS scheduler. 
+
+\begin{DoxyAuthor}{Author}
+William Asp 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{freertos_8c_abade755e13d07c10889ae83143656158}\label{freertos_8c_abade755e13d07c10889ae83143656158}} 
+\index{freertos.c@{freertos.c}!MX\_FREERTOS\_Init@{MX\_FREERTOS\_Init}}
+\index{MX\_FREERTOS\_Init@{MX\_FREERTOS\_Init}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{MX\_FREERTOS\_Init()}{MX\_FREERTOS\_Init()}}
+{\footnotesize\ttfamily void MX\+\_\+\+FREERTOS\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Free\+RTOS initialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{freertos_8c_afd957356727fca7d1dfbb09c3a1f0f40}\label{freertos_8c_afd957356727fca7d1dfbb09c3a1f0f40}} 
+\index{freertos.c@{freertos.c}!startBacklightTask@{startBacklightTask}}
+\index{startBacklightTask@{startBacklightTask}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{startBacklightTask()}{startBacklightTask()}}
+{\footnotesize\ttfamily void start\+Backlight\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{argument }\end{DoxyParamCaption})}
+
+
+
+Function implementing the backlight\+Task thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & Not used \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{freertos_8c_a14c240f717f2b1c86b0ce94fc47773dd}\label{freertos_8c_a14c240f717f2b1c86b0ce94fc47773dd}} 
+\index{freertos.c@{freertos.c}!startClockTask@{startClockTask}}
+\index{startClockTask@{startClockTask}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{startClockTask()}{startClockTask()}}
+{\footnotesize\ttfamily void start\+Clock\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{argument }\end{DoxyParamCaption})}
+
+
+
+Function implementing the clock\+Task thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & Not used \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{freertos_8c_a99d0fdb0434092bcb24d9c9af917e4e9}\label{freertos_8c_a99d0fdb0434092bcb24d9c9af917e4e9}} 
+\index{freertos.c@{freertos.c}!StartDefaultTask@{StartDefaultTask}}
+\index{StartDefaultTask@{StartDefaultTask}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{StartDefaultTask()}{StartDefaultTask()}}
+{\footnotesize\ttfamily void Start\+Default\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{argument }\end{DoxyParamCaption})}
+
+
+
+Function implementing the default\+Task thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & Not used \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{freertos_8c_a75bec6f949ff14bacdc328913a3d16a4}\label{freertos_8c_a75bec6f949ff14bacdc328913a3d16a4}} 
+\index{freertos.c@{freertos.c}!backlightTask\_attributes@{backlightTask\_attributes}}
+\index{backlightTask\_attributes@{backlightTask\_attributes}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{backlightTask\_attributes}{backlightTask\_attributes}}
+{\footnotesize\ttfamily const os\+Thread\+Attr\+\_\+t backlight\+Task\+\_\+attributes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  .name = \textcolor{stringliteral}{"{}backlightTask"{}},}
+\DoxyCodeLine{  .stack\_size = 128 * 4,}
+\DoxyCodeLine{  .priority = (osPriority\_t) osPriorityNormal,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{freertos_8c_a5cb2d458c060623bb07f0792c4c57ac2}\label{freertos_8c_a5cb2d458c060623bb07f0792c4c57ac2}} 
+\index{freertos.c@{freertos.c}!clockTask\_attributes@{clockTask\_attributes}}
+\index{clockTask\_attributes@{clockTask\_attributes}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{clockTask\_attributes}{clockTask\_attributes}}
+{\footnotesize\ttfamily const os\+Thread\+Attr\+\_\+t clock\+Task\+\_\+attributes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  .name = \textcolor{stringliteral}{"{}clockTask"{}},}
+\DoxyCodeLine{  .stack\_size = 128 * 4,}
+\DoxyCodeLine{  .priority = (osPriority\_t) osPriorityAboveNormal,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{freertos_8c_a25fbb54afdba71c24ba51ed50166ac8d}\label{freertos_8c_a25fbb54afdba71c24ba51ed50166ac8d}} 
+\index{freertos.c@{freertos.c}!defaultTask\_attributes@{defaultTask\_attributes}}
+\index{defaultTask\_attributes@{defaultTask\_attributes}!freertos.c@{freertos.c}}
+\doxysubsubsection{\texorpdfstring{defaultTask\_attributes}{defaultTask\_attributes}}
+{\footnotesize\ttfamily const os\+Thread\+Attr\+\_\+t default\+Task\+\_\+attributes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  .name = \textcolor{stringliteral}{"{}defaultTask"{}},}
+\DoxyCodeLine{  .stack\_size = 128 * 4,}
+\DoxyCodeLine{  .priority = (osPriority\_t) osPriorityLow,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

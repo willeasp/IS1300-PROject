@@ -1,201 +1,139 @@
 \begin{theindex}
 
-  \item {\_sbrk}
-    \subitem {sysmem.c}, \hyperpage{27}
+  \item {backlightTask\_attributes}
+    \subitem {freertos.c}, \hyperpage{10}
 
   \indexspace
 
-  \item {adc.c}
-    \subitem {HAL\_ADC\_MspDeInit}, \hyperpage{10}
-    \subitem {HAL\_ADC\_MspInit}, \hyperpage{10}
-    \subitem {MX\_ADC1\_Init}, \hyperpage{10}
+  \item {clock.c}
+    \subitem {get\_time}, \hyperpage{3}
+  \item {clockTask\_attributes}
+    \subitem {freertos.c}, \hyperpage{10}
+  \item {Core/Src/clock.c}, \hyperpage{3}
+  \item {Core/Src/display.c}, \hyperpage{4}
+  \item {Core/Src/error.c}, \hyperpage{7}
+  \item {Core/Src/freertos.c}, \hyperpage{8}
+  \item {Core/Src/main.c}, \hyperpage{11}
+  \item {Core/Src/potentiometer.c}, \hyperpage{15}
+  \item {Core/Src/red.c}, \hyperpage{16}
+  \item {Core/Src/uart.c}, \hyperpage{17}
 
   \indexspace
 
-  \item {CMSIS}, \hyperpage{5}
-  \item {Core/Src/adc.c}, \hyperpage{9}
-  \item {Core/Src/display.c}, \hyperpage{10}
-  \item {Core/Src/gpio.c}, \hyperpage{13}
-  \item {Core/Src/main.c}, \hyperpage{14}
-  \item {Core/Src/potentiometer.c}, \hyperpage{18}
-  \item {Core/Src/rtc.c}, \hyperpage{19}
-  \item {Core/Src/spi.c}, \hyperpage{20}
-  \item {Core/Src/stm32l4xx\_hal\_msp.c}, \hyperpage{21}
-  \item {Core/Src/stm32l4xx\_hal\_timebase\_tim.c}, \hyperpage{22}
-  \item {Core/Src/stm32l4xx\_it.c}, \hyperpage{24}
-  \item {Core/Src/syscalls.c}, \hyperpage{25}
-  \item {Core/Src/sysmem.c}, \hyperpage{26}
-  \item {Core/Src/system\_stm32l4xx.c}, \hyperpage{28}
-  \item {Core/Src/tim.c}, \hyperpage{29}
-  \item {Core/Src/uart.c}, \hyperpage{30}
-  \item {Core/Src/usart.c}, \hyperpage{32}
-
-  \indexspace
-
+  \item {defaultTask\_attributes}
+    \subitem {freertos.c}, \hyperpage{11}
   \item {display.c}
-    \subitem {display\_send\_instruction}, \hyperpage{11}
-    \subitem {display\_transmit}, \hyperpage{12}
-    \subitem {display\_write}, \hyperpage{12}
-    \subitem {display\_write\_row}, \hyperpage{12}
-    \subitem {set\_row}, \hyperpage{13}
-    \subitem {split\_byte}, \hyperpage{13}
+    \subitem {display\_send\_instruction}, \hyperpage{5}
+    \subitem {display\_transmit}, \hyperpage{5}
+    \subitem {display\_write}, \hyperpage{5}
+    \subitem {display\_write\_row}, \hyperpage{6}
+    \subitem {set\_row}, \hyperpage{6}
+    \subitem {split\_byte}, \hyperpage{6}
   \item {display\_send\_instruction}
-    \subitem {display.c}, \hyperpage{11}
+    \subitem {display.c}, \hyperpage{5}
   \item {display\_transmit}
-    \subitem {display.c}, \hyperpage{12}
+    \subitem {display.c}, \hyperpage{5}
   \item {display\_write}
-    \subitem {display.c}, \hyperpage{12}
+    \subitem {display.c}, \hyperpage{5}
   \item {display\_write\_row}
-    \subitem {display.c}, \hyperpage{12}
+    \subitem {display.c}, \hyperpage{6}
 
   \indexspace
 
+  \item {error.c}
+    \subitem {handle\_error}, \hyperpage{7}
   \item {Error\_Handler}
-    \subitem {main.c}, \hyperpage{15}
+    \subitem {main.c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {freertos.c}
+    \subitem {backlightTask\_attributes}, \hyperpage{10}
+    \subitem {clockTask\_attributes}, \hyperpage{10}
+    \subitem {defaultTask\_attributes}, \hyperpage{11}
+    \subitem {MX\_FREERTOS\_Init}, \hyperpage{9}
+    \subitem {startBacklightTask}, \hyperpage{9}
+    \subitem {startClockTask}, \hyperpage{9}
+    \subitem {StartDefaultTask}, \hyperpage{10}
 
   \indexspace
 
   \item {get\_potentiometer\_value}
-    \subitem {potentiometer.c}, \hyperpage{18}
-  \item {gpio.c}
-    \subitem {MX\_GPIO\_Init}, \hyperpage{14}
+    \subitem {potentiometer.c}, \hyperpage{15}
+  \item {get\_time}
+    \subitem {clock.c}, \hyperpage{3}
 
   \indexspace
 
-  \item {HAL\_ADC\_MspDeInit}
-    \subitem {adc.c}, \hyperpage{10}
-  \item {HAL\_ADC\_MspInit}
-    \subitem {adc.c}, \hyperpage{10}
-  \item {HAL\_InitTick}
-    \subitem {stm32l4xx\_hal\_timebase\_tim.c}, \hyperpage{23}
-  \item {HAL\_MspInit}
-    \subitem {stm32l4xx\_hal\_msp.c}, \hyperpage{22}
-  \item {HAL\_ResumeTick}
-    \subitem {stm32l4xx\_hal\_timebase\_tim.c}, \hyperpage{23}
-  \item {HAL\_RTC\_MspInit}
-    \subitem {rtc.c}, \hyperpage{19}
-  \item {HAL\_SPI\_MspDeInit}
-    \subitem {spi.c}, \hyperpage{21}
-  \item {HAL\_SPI\_MspInit}
-    \subitem {spi.c}, \hyperpage{21}
-  \item {HAL\_SuspendTick}
-    \subitem {stm32l4xx\_hal\_timebase\_tim.c}, \hyperpage{23}
-  \item {HAL\_TIM\_MspPostInit}
-    \subitem {tim.c}, \hyperpage{30}
   \item {HAL\_TIM\_PeriodElapsedCallback}
-    \subitem {main.c}, \hyperpage{16}
-  \item {HAL\_UART\_MspDeInit}
-    \subitem {usart.c}, \hyperpage{32}
-  \item {HAL\_UART\_MspInit}
-    \subitem {usart.c}, \hyperpage{32}
+    \subitem {main.c}, \hyperpage{12}
   \item {HAL\_UART\_RxCpltCallback}
-    \subitem {main.c}, \hyperpage{16}
+    \subitem {main.c}, \hyperpage{13}
   \item {HAL\_UART\_TxCpltCallback}
-    \subitem {main.c}, \hyperpage{17}
-  \item {HSE\_VALUE}
-    \subitem {STM32L4xx\_System\_Private\_Defines}, \hyperpage{6}
-  \item {HSI\_VALUE}
-    \subitem {STM32L4xx\_System\_Private\_Defines}, \hyperpage{6}
+    \subitem {main.c}, \hyperpage{13}
+  \item {handle\_error}
+    \subitem {error.c}, \hyperpage{7}
 
   \indexspace
 
   \item {main}
-    \subitem {main.c}, \hyperpage{17}
+    \subitem {main.c}, \hyperpage{14}
   \item {main.c}
-    \subitem {Error\_Handler}, \hyperpage{15}
-    \subitem {HAL\_TIM\_PeriodElapsedCallback}, \hyperpage{16}
-    \subitem {HAL\_UART\_RxCpltCallback}, \hyperpage{16}
-    \subitem {HAL\_UART\_TxCpltCallback}, \hyperpage{17}
-    \subitem {main}, \hyperpage{17}
-    \subitem {MX\_FREERTOS\_Init}, \hyperpage{17}
-    \subitem {SystemClock\_Config}, \hyperpage{18}
-  \item {MSI\_VALUE}
-    \subitem {STM32L4xx\_System\_Private\_Defines}, \hyperpage{6}
-  \item {MSIRangeTable}
-    \subitem {STM32L4xx\_System\_Private\_Variables}, \hyperpage{6}
-  \item {MX\_ADC1\_Init}
-    \subitem {adc.c}, \hyperpage{10}
+    \subitem {Error\_Handler}, \hyperpage{12}
+    \subitem {HAL\_TIM\_PeriodElapsedCallback}, \hyperpage{12}
+    \subitem {HAL\_UART\_RxCpltCallback}, \hyperpage{13}
+    \subitem {HAL\_UART\_TxCpltCallback}, \hyperpage{13}
+    \subitem {main}, \hyperpage{14}
+    \subitem {MX\_FREERTOS\_Init}, \hyperpage{14}
+    \subitem {SystemClock\_Config}, \hyperpage{14}
   \item {MX\_FREERTOS\_Init}
-    \subitem {main.c}, \hyperpage{17}
-  \item {MX\_GPIO\_Init}
-    \subitem {gpio.c}, \hyperpage{14}
-  \item {MX\_RTC\_Init}
-    \subitem {rtc.c}, \hyperpage{20}
+    \subitem {freertos.c}, \hyperpage{9}
+    \subitem {main.c}, \hyperpage{14}
 
   \indexspace
 
   \item {potentiometer.c}
-    \subitem {get\_potentiometer\_value}, \hyperpage{18}
+    \subitem {get\_potentiometer\_value}, \hyperpage{15}
 
   \indexspace
 
-  \item {rtc.c}
-    \subitem {HAL\_RTC\_MspInit}, \hyperpage{19}
-    \subitem {MX\_RTC\_Init}, \hyperpage{20}
+  \item {red.c}
+    \subitem {set\_brightness}, \hyperpage{16}
 
   \indexspace
 
+  \item {set\_brightness}
+    \subitem {red.c}, \hyperpage{16}
   \item {set\_row}
-    \subitem {display.c}, \hyperpage{13}
-  \item {spi.c}
-    \subitem {HAL\_SPI\_MspDeInit}, \hyperpage{21}
-    \subitem {HAL\_SPI\_MspInit}, \hyperpage{21}
+    \subitem {display.c}, \hyperpage{6}
   \item {split\_byte}
-    \subitem {display.c}, \hyperpage{13}
-  \item {stm32l4xx\_hal\_msp.c}
-    \subitem {HAL\_MspInit}, \hyperpage{22}
-  \item {stm32l4xx\_hal\_timebase\_tim.c}
-    \subitem {HAL\_InitTick}, \hyperpage{23}
-    \subitem {HAL\_ResumeTick}, \hyperpage{23}
-    \subitem {HAL\_SuspendTick}, \hyperpage{23}
-  \item {Stm32l4xx\_system}, \hyperpage{5}
-  \item {STM32L4xx\_System\_Private\_Defines}, \hyperpage{5}
-    \subitem {HSE\_VALUE}, \hyperpage{6}
-    \subitem {HSI\_VALUE}, \hyperpage{6}
-    \subitem {MSI\_VALUE}, \hyperpage{6}
-  \item {STM32L4xx\_System\_Private\_FunctionPrototypes}, \hyperpage{7}
-  \item {STM32L4xx\_System\_Private\_Functions}, \hyperpage{7}
-    \subitem {SystemCoreClockUpdate}, \hyperpage{7}
-    \subitem {SystemInit}, \hyperpage{8}
-  \item {STM32L4xx\_System\_Private\_Includes}, \hyperpage{5}
-  \item {STM32L4xx\_System\_Private\_Macros}, \hyperpage{6}
-  \item {STM32L4xx\_System\_Private\_TypesDefinitions}, \hyperpage{5}
-  \item {STM32L4xx\_System\_Private\_Variables}, \hyperpage{6}
-    \subitem {MSIRangeTable}, \hyperpage{6}
-  \item {sysmem.c}
-    \subitem {\_sbrk}, \hyperpage{27}
+    \subitem {display.c}, \hyperpage{6}
+  \item {startBacklightTask}
+    \subitem {freertos.c}, \hyperpage{9}
+  \item {startClockTask}
+    \subitem {freertos.c}, \hyperpage{9}
+  \item {StartDefaultTask}
+    \subitem {freertos.c}, \hyperpage{10}
   \item {SystemClock\_Config}
-    \subitem {main.c}, \hyperpage{18}
-  \item {SystemCoreClockUpdate}
-    \subitem {STM32L4xx\_System\_Private\_Functions}, \hyperpage{7}
-  \item {SystemInit}
-    \subitem {STM32L4xx\_System\_Private\_Functions}, \hyperpage{8}
-
-  \indexspace
-
-  \item {tim.c}
-    \subitem {HAL\_TIM\_MspPostInit}, \hyperpage{30}
+    \subitem {main.c}, \hyperpage{14}
 
   \indexspace
 
   \item {uart.c}
-    \subitem {uart\_get\_clock\_input}, \hyperpage{31}
-    \subitem {uart\_println}, \hyperpage{31}
-    \subitem {uart\_printnum}, \hyperpage{31}
-    \subitem {uart\_receive}, \hyperpage{31}
-    \subitem {uart\_send}, \hyperpage{31}
+    \subitem {uart\_get\_clock\_input}, \hyperpage{17}
+    \subitem {uart\_println}, \hyperpage{18}
+    \subitem {uart\_printnum}, \hyperpage{18}
+    \subitem {uart\_receive}, \hyperpage{18}
+    \subitem {uart\_send}, \hyperpage{19}
   \item {uart\_get\_clock\_input}
-    \subitem {uart.c}, \hyperpage{31}
+    \subitem {uart.c}, \hyperpage{17}
   \item {uart\_println}
-    \subitem {uart.c}, \hyperpage{31}
+    \subitem {uart.c}, \hyperpage{18}
   \item {uart\_printnum}
-    \subitem {uart.c}, \hyperpage{31}
+    \subitem {uart.c}, \hyperpage{18}
   \item {uart\_receive}
-    \subitem {uart.c}, \hyperpage{31}
+    \subitem {uart.c}, \hyperpage{18}
   \item {uart\_send}
-    \subitem {uart.c}, \hyperpage{31}
-  \item {usart.c}
-    \subitem {HAL\_UART\_MspDeInit}, \hyperpage{32}
-    \subitem {HAL\_UART\_MspInit}, \hyperpage{32}
+    \subitem {uart.c}, \hyperpage{19}
 
 \end{theindex}

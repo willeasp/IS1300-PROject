@@ -1,0 +1,46 @@
+\hypertarget{clock_8c}{}\doxysection{Core/\+Src/clock.c File Reference}
+\label{clock_8c}\index{Core/Src/clock.c@{Core/Src/clock.c}}
+
+
+This file provides code for starting and getting the rtc time.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{clock_8c_a2ba9de910b573a046bda65cf7942e56f}\label{clock_8c_a2ba9de910b573a046bda65cf7942e56f}} 
+void \mbox{\hyperlink{clock_8c_a2ba9de910b573a046bda65cf7942e56f}{start\+\_\+clock}} (uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)
+\begin{DoxyCompactList}\small\item\em start the RTC clock \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{clock_8c_af2b63032a51751b3b5788afc760c6020}{get\+\_\+time}} (RTC\+\_\+\+Time\+Type\+Def $\ast$time)
+\begin{DoxyCompactList}\small\item\em Get the current RTC time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides code for starting and getting the rtc time. 
+
+\begin{DoxyAuthor}{Author}
+William Asp 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{clock_8c_af2b63032a51751b3b5788afc760c6020}\label{clock_8c_af2b63032a51751b3b5788afc760c6020}} 
+\index{clock.c@{clock.c}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!clock.c@{clock.c}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily void get\+\_\+time (\begin{DoxyParamCaption}\item[{RTC\+\_\+\+Time\+Type\+Def $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+Get the current RTC time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em time} & The current time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the time struct 
+\end{DoxyReturn}
