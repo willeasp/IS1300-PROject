@@ -12,6 +12,9 @@
 
 /**
  * @brief start the RTC clock
+ * @param[in] hours Sets the clock hours
+ * @param[in] minutes Sets the clock minuts
+ * @param[in] seconds Sets the clock seconds
  */
 void start_clock (uint8_t hours, uint8_t minutes, uint8_t seconds) {
     RTC_TimeTypeDef time = {0};
@@ -27,7 +30,7 @@ void start_clock (uint8_t hours, uint8_t minutes, uint8_t seconds) {
 /**
  * @brief Get the current RTC time
  * @param[out] time The current time
- * @return Pointer to the time struct
+ * @retval time Updated struct with current time
  */
 void get_time (RTC_TimeTypeDef *time) {
     HAL_RTC_GetTime(&hrtc, time, RTC_FORMAT_BIN);

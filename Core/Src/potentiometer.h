@@ -12,4 +12,9 @@
 
 #endif /* SRC_POTENTIOMETER_H_ */
 
+/**
+ * @brief The max value that the potentiometer can have
+ */
+#define POT_MAX 4066
+
 uint32_t get_potentiometer_value ();
