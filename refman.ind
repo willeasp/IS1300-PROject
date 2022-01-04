@@ -1,139 +1,163 @@
 \begin{theindex}
 
   \item {backlightTask\_attributes}
-    \subitem {freertos.c}, \hyperpage{10}
+    \subitem {freertos.c}, \hyperpage{12}
 
   \indexspace
 
+  \item {clear\_display}
+    \subitem {display.c}, \hyperpage{5}
   \item {clock.c}
     \subitem {get\_time}, \hyperpage{3}
+    \subitem {start\_clock}, \hyperpage{4}
   \item {clockTask\_attributes}
-    \subitem {freertos.c}, \hyperpage{10}
+    \subitem {freertos.c}, \hyperpage{12}
   \item {Core/Src/clock.c}, \hyperpage{3}
   \item {Core/Src/display.c}, \hyperpage{4}
-  \item {Core/Src/error.c}, \hyperpage{7}
-  \item {Core/Src/freertos.c}, \hyperpage{8}
-  \item {Core/Src/main.c}, \hyperpage{11}
-  \item {Core/Src/potentiometer.c}, \hyperpage{15}
-  \item {Core/Src/red.c}, \hyperpage{16}
-  \item {Core/Src/uart.c}, \hyperpage{17}
+  \item {Core/Src/error.c}, \hyperpage{9}
+  \item {Core/Src/freertos.c}, \hyperpage{9}
+  \item {Core/Src/main.c}, \hyperpage{13}
+  \item {Core/Src/potentiometer.c}, \hyperpage{16}
+  \item {Core/Src/red.c}, \hyperpage{17}
+  \item {Core/Src/uart.c}, \hyperpage{18}
 
   \indexspace
 
   \item {defaultTask\_attributes}
-    \subitem {freertos.c}, \hyperpage{11}
+    \subitem {freertos.c}, \hyperpage{12}
   \item {display.c}
+    \subitem {clear\_display}, \hyperpage{5}
     \subitem {display\_send\_instruction}, \hyperpage{5}
-    \subitem {display\_transmit}, \hyperpage{5}
-    \subitem {display\_write}, \hyperpage{5}
-    \subitem {display\_write\_row}, \hyperpage{6}
-    \subitem {set\_row}, \hyperpage{6}
-    \subitem {split\_byte}, \hyperpage{6}
+    \subitem {display\_transmit}, \hyperpage{6}
+    \subitem {display\_write}, \hyperpage{6}
+    \subitem {display\_write\_row}, \hyperpage{7}
+    \subitem {hardware\_reset}, \hyperpage{7}
+    \subitem {init\_display}, \hyperpage{7}
+    \subitem {set\_backlight}, \hyperpage{7}
+    \subitem {set\_row}, \hyperpage{8}
+    \subitem {split\_byte}, \hyperpage{8}
+    \subitem {test\_backlight}, \hyperpage{8}
   \item {display\_send\_instruction}
     \subitem {display.c}, \hyperpage{5}
   \item {display\_transmit}
-    \subitem {display.c}, \hyperpage{5}
-  \item {display\_write}
-    \subitem {display.c}, \hyperpage{5}
-  \item {display\_write\_row}
     \subitem {display.c}, \hyperpage{6}
+  \item {display\_write}
+    \subitem {display.c}, \hyperpage{6}
+  \item {display\_write\_row}
+    \subitem {display.c}, \hyperpage{7}
 
   \indexspace
 
   \item {error.c}
-    \subitem {handle\_error}, \hyperpage{7}
+    \subitem {handle\_error}, \hyperpage{9}
   \item {Error\_Handler}
-    \subitem {main.c}, \hyperpage{12}
+    \subitem {main.c}, \hyperpage{14}
 
   \indexspace
 
   \item {freertos.c}
-    \subitem {backlightTask\_attributes}, \hyperpage{10}
-    \subitem {clockTask\_attributes}, \hyperpage{10}
-    \subitem {defaultTask\_attributes}, \hyperpage{11}
-    \subitem {MX\_FREERTOS\_Init}, \hyperpage{9}
-    \subitem {startBacklightTask}, \hyperpage{9}
-    \subitem {startClockTask}, \hyperpage{9}
-    \subitem {StartDefaultTask}, \hyperpage{10}
+    \subitem {backlightTask\_attributes}, \hyperpage{12}
+    \subitem {clockTask\_attributes}, \hyperpage{12}
+    \subitem {defaultTask\_attributes}, \hyperpage{12}
+    \subitem {MX\_FREERTOS\_Init}, \hyperpage{10}
+    \subitem {startBacklightTask}, \hyperpage{11}
+    \subitem {startClockTask}, \hyperpage{11}
+    \subitem {StartDefaultTask}, \hyperpage{11}
 
   \indexspace
 
   \item {get\_potentiometer\_value}
-    \subitem {potentiometer.c}, \hyperpage{15}
+    \subitem {potentiometer.c}, \hyperpage{17}
   \item {get\_time}
     \subitem {clock.c}, \hyperpage{3}
 
   \indexspace
 
   \item {HAL\_TIM\_PeriodElapsedCallback}
-    \subitem {main.c}, \hyperpage{12}
+    \subitem {main.c}, \hyperpage{14}
   \item {HAL\_UART\_RxCpltCallback}
-    \subitem {main.c}, \hyperpage{13}
+    \subitem {main.c}, \hyperpage{14}
   \item {HAL\_UART\_TxCpltCallback}
-    \subitem {main.c}, \hyperpage{13}
+    \subitem {main.c}, \hyperpage{15}
   \item {handle\_error}
-    \subitem {error.c}, \hyperpage{7}
+    \subitem {error.c}, \hyperpage{9}
+  \item {hardware\_reset}
+    \subitem {display.c}, \hyperpage{7}
+
+  \indexspace
+
+  \item {init\_display}
+    \subitem {display.c}, \hyperpage{7}
 
   \indexspace
 
   \item {main}
-    \subitem {main.c}, \hyperpage{14}
+    \subitem {main.c}, \hyperpage{15}
   \item {main.c}
-    \subitem {Error\_Handler}, \hyperpage{12}
-    \subitem {HAL\_TIM\_PeriodElapsedCallback}, \hyperpage{12}
-    \subitem {HAL\_UART\_RxCpltCallback}, \hyperpage{13}
-    \subitem {HAL\_UART\_TxCpltCallback}, \hyperpage{13}
-    \subitem {main}, \hyperpage{14}
-    \subitem {MX\_FREERTOS\_Init}, \hyperpage{14}
-    \subitem {SystemClock\_Config}, \hyperpage{14}
+    \subitem {Error\_Handler}, \hyperpage{14}
+    \subitem {HAL\_TIM\_PeriodElapsedCallback}, \hyperpage{14}
+    \subitem {HAL\_UART\_RxCpltCallback}, \hyperpage{14}
+    \subitem {HAL\_UART\_TxCpltCallback}, \hyperpage{15}
+    \subitem {main}, \hyperpage{15}
+    \subitem {MX\_FREERTOS\_Init}, \hyperpage{16}
+    \subitem {SystemClock\_Config}, \hyperpage{16}
   \item {MX\_FREERTOS\_Init}
-    \subitem {freertos.c}, \hyperpage{9}
-    \subitem {main.c}, \hyperpage{14}
+    \subitem {freertos.c}, \hyperpage{10}
+    \subitem {main.c}, \hyperpage{16}
 
   \indexspace
 
   \item {potentiometer.c}
-    \subitem {get\_potentiometer\_value}, \hyperpage{15}
+    \subitem {get\_potentiometer\_value}, \hyperpage{17}
 
   \indexspace
 
   \item {red.c}
-    \subitem {set\_brightness}, \hyperpage{16}
+    \subitem {set\_brightness}, \hyperpage{18}
 
   \indexspace
 
+  \item {set\_backlight}
+    \subitem {display.c}, \hyperpage{7}
   \item {set\_brightness}
-    \subitem {red.c}, \hyperpage{16}
+    \subitem {red.c}, \hyperpage{18}
   \item {set\_row}
-    \subitem {display.c}, \hyperpage{6}
+    \subitem {display.c}, \hyperpage{8}
   \item {split\_byte}
-    \subitem {display.c}, \hyperpage{6}
+    \subitem {display.c}, \hyperpage{8}
+  \item {start\_clock}
+    \subitem {clock.c}, \hyperpage{4}
   \item {startBacklightTask}
-    \subitem {freertos.c}, \hyperpage{9}
+    \subitem {freertos.c}, \hyperpage{11}
   \item {startClockTask}
-    \subitem {freertos.c}, \hyperpage{9}
+    \subitem {freertos.c}, \hyperpage{11}
   \item {StartDefaultTask}
-    \subitem {freertos.c}, \hyperpage{10}
+    \subitem {freertos.c}, \hyperpage{11}
   \item {SystemClock\_Config}
-    \subitem {main.c}, \hyperpage{14}
+    \subitem {main.c}, \hyperpage{16}
+
+  \indexspace
+
+  \item {test\_backlight}
+    \subitem {display.c}, \hyperpage{8}
 
   \indexspace
 
   \item {uart.c}
-    \subitem {uart\_get\_clock\_input}, \hyperpage{17}
-    \subitem {uart\_println}, \hyperpage{18}
-    \subitem {uart\_printnum}, \hyperpage{18}
-    \subitem {uart\_receive}, \hyperpage{18}
-    \subitem {uart\_send}, \hyperpage{19}
+    \subitem {uart\_get\_clock\_input}, \hyperpage{19}
+    \subitem {uart\_println}, \hyperpage{19}
+    \subitem {uart\_printnum}, \hyperpage{20}
+    \subitem {uart\_receive}, \hyperpage{20}
+    \subitem {uart\_send}, \hyperpage{20}
   \item {uart\_get\_clock\_input}
-    \subitem {uart.c}, \hyperpage{17}
-  \item {uart\_println}
-    \subitem {uart.c}, \hyperpage{18}
-  \item {uart\_printnum}
-    \subitem {uart.c}, \hyperpage{18}
-  \item {uart\_receive}
-    \subitem {uart.c}, \hyperpage{18}
-  \item {uart\_send}
     \subitem {uart.c}, \hyperpage{19}
+  \item {uart\_println}
+    \subitem {uart.c}, \hyperpage{19}
+  \item {uart\_printnum}
+    \subitem {uart.c}, \hyperpage{20}
+  \item {uart\_receive}
+    \subitem {uart.c}, \hyperpage{20}
+  \item {uart\_send}
+    \subitem {uart.c}, \hyperpage{20}
 
 \end{theindex}

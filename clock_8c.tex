@@ -10,7 +10,6 @@ This file provides code for starting and getting the rtc time.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{clock_8c_a2ba9de910b573a046bda65cf7942e56f}\label{clock_8c_a2ba9de910b573a046bda65cf7942e56f}} 
 void \mbox{\hyperlink{clock_8c_a2ba9de910b573a046bda65cf7942e56f}{start\+\_\+clock}} (uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)
 \begin{DoxyCompactList}\small\item\em start the RTC clock \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{clock_8c_af2b63032a51751b3b5788afc760c6020}{get\+\_\+time}} (RTC\+\_\+\+Time\+Type\+Def $\ast$time)
@@ -41,6 +40,27 @@ Get the current RTC time.
 \mbox{\texttt{ out}}  & {\em time} & The current time \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointer to the time struct 
-\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em time} & Updated struct with current time \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{clock_8c_a2ba9de910b573a046bda65cf7942e56f}\label{clock_8c_a2ba9de910b573a046bda65cf7942e56f}} 
+\index{clock.c@{clock.c}!start\_clock@{start\_clock}}
+\index{start\_clock@{start\_clock}!clock.c@{clock.c}}
+\doxysubsubsection{\texorpdfstring{start\_clock()}{start\_clock()}}
+{\footnotesize\ttfamily void start\+\_\+clock (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{hours,  }\item[{uint8\+\_\+t}]{minutes,  }\item[{uint8\+\_\+t}]{seconds }\end{DoxyParamCaption})}
+
+
+
+start the RTC clock 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em hours} & Sets the clock hours \\
+\hline
+\mbox{\texttt{ in}}  & {\em minutes} & Sets the clock minuts \\
+\hline
+\mbox{\texttt{ in}}  & {\em seconds} & Sets the clock seconds \\
+\hline
+\end{DoxyParams}

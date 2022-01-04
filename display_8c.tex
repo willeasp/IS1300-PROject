@@ -12,13 +12,10 @@ This file provides code for initialising and communicating with the display modu
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{display_8c_af75f0c295259a026924231d6244e6d14}\label{display_8c_af75f0c295259a026924231d6244e6d14}} 
 void \mbox{\hyperlink{display_8c_af75f0c295259a026924231d6244e6d14}{hardware\+\_\+reset}} ()
-\begin{DoxyCompactList}\small\item\em Perform a hardware reset on the display Resets the display by writing to the displays hardware reset pin. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{display_8c_a0993935dab5558085ba00e3adee08fea}\label{display_8c_a0993935dab5558085ba00e3adee08fea}} 
+\begin{DoxyCompactList}\small\item\em Perform a hardware reset on the display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{display_8c_a0993935dab5558085ba00e3adee08fea}{test\+\_\+backlight}} ()
-\begin{DoxyCompactList}\small\item\em Test all backlight colors Run through each color of the display to see that they are lighting up. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{display_8c_a6c534d2b8a36411919e5c67aeb88417c}\label{display_8c_a6c534d2b8a36411919e5c67aeb88417c}} 
+\begin{DoxyCompactList}\small\item\em Test all backlight colors. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{display_8c_a6c534d2b8a36411919e5c67aeb88417c}{set\+\_\+backlight}} (uint8\+\_\+t color, GPIO\+\_\+\+Pin\+State state)
 \begin{DoxyCompactList}\small\item\em Set a backlight color. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{display_8c_a414526962a6150dfd5835360a509c36c}{split\+\_\+byte}} (uint8\+\_\+t byte, uint8\+\_\+t $\ast$buffer)
@@ -33,10 +30,8 @@ int \mbox{\hyperlink{display_8c_adf2fce95820b95a0a565b288227312e2}{set\+\_\+row}
 \begin{DoxyCompactList}\small\item\em Set the cursor on the display. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{display_8c_a668c37934dc91816447115b25698bb85}{display\+\_\+write\+\_\+row}} (char $\ast$characters, uint16\+\_\+t length, uint8\+\_\+t row)
 \begin{DoxyCompactList}\small\item\em Write text to a specific row on the display. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{display_8c_aa8badc0c38d6b6de90a565286678d6a8}\label{display_8c_aa8badc0c38d6b6de90a565286678d6a8}} 
 int \mbox{\hyperlink{display_8c_aa8badc0c38d6b6de90a565286678d6a8}{clear\+\_\+display}} ()
 \begin{DoxyCompactList}\small\item\em Clears the display. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}\label{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}} 
 void \mbox{\hyperlink{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}{init\+\_\+display}} ()
 \begin{DoxyCompactList}\small\item\em Initialise the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
@@ -62,6 +57,19 @@ William Asp
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{display_8c_aa8badc0c38d6b6de90a565286678d6a8}\label{display_8c_aa8badc0c38d6b6de90a565286678d6a8}} 
+\index{display.c@{display.c}!clear\_display@{clear\_display}}
+\index{clear\_display@{clear\_display}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{clear\_display()}{clear\_display()}}
+{\footnotesize\ttfamily int clear\+\_\+display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the display. 
+
+Clears the display by sending the clear instruction to the display \begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
 \mbox{\Hypertarget{display_8c_aa7c203e793216a18e77c873c78008469}\label{display_8c_aa7c203e793216a18e77c873c78008469}} 
 \index{display.c@{display.c}!display\_send\_instruction@{display\_send\_instruction}}
 \index{display\_send\_instruction@{display\_send\_instruction}!display.c@{display.c}}
@@ -79,6 +87,9 @@ Send instruction bytes via spi to the display.
 \mbox{\texttt{ in}}  & {\em length} & The number of instructions \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
 \mbox{\Hypertarget{display_8c_a46e9b88cc7f2dc371810e55155a40647}\label{display_8c_a46e9b88cc7f2dc371810e55155a40647}} 
 \index{display.c@{display.c}!display\_transmit@{display\_transmit}}
 \index{display\_transmit@{display\_transmit}!display.c@{display.c}}
@@ -98,6 +109,9 @@ Send the display data or instructions.
 \mbox{\texttt{ in}}  & {\em length} & The number of bytes to send \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
 \mbox{\Hypertarget{display_8c_a2b54b531a4474cd5f4370a2ec6d7dff4}\label{display_8c_a2b54b531a4474cd5f4370a2ec6d7dff4}} 
 \index{display.c@{display.c}!display\_write@{display\_write}}
 \index{display\_write@{display\_write}!display.c@{display.c}}
@@ -115,6 +129,9 @@ Write characters to the display where the cursor currently are.
 {\em length} & The number of characters \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
 \mbox{\Hypertarget{display_8c_a668c37934dc91816447115b25698bb85}\label{display_8c_a668c37934dc91816447115b25698bb85}} 
 \index{display.c@{display.c}!display\_write\_row@{display\_write\_row}}
 \index{display\_write\_row@{display\_write\_row}!display.c@{display.c}}
@@ -134,6 +151,46 @@ Write text to a specific row on the display.
 \mbox{\texttt{ in}}  & {\em row} & The row to write to \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{display_8c_af75f0c295259a026924231d6244e6d14}\label{display_8c_af75f0c295259a026924231d6244e6d14}} 
+\index{display.c@{display.c}!hardware\_reset@{hardware\_reset}}
+\index{hardware\_reset@{hardware\_reset}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{hardware\_reset()}{hardware\_reset()}}
+{\footnotesize\ttfamily void hardware\+\_\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Perform a hardware reset on the display. 
+
+Resets the display by writing to the displays hardware reset pin \mbox{\Hypertarget{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}\label{display_8c_ac079cd712ceeaf40cc0733b0f3a5d860}} 
+\index{display.c@{display.c}!init\_display@{init\_display}}
+\index{init\_display@{init\_display}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{init\_display()}{init\_display()}}
+{\footnotesize\ttfamily void init\+\_\+display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise the display. 
+
+Initialises the display by running the displays init sequence. Optional testing of the display by compiling with -\/DTEST flag \mbox{\Hypertarget{display_8c_a6c534d2b8a36411919e5c67aeb88417c}\label{display_8c_a6c534d2b8a36411919e5c67aeb88417c}} 
+\index{display.c@{display.c}!set\_backlight@{set\_backlight}}
+\index{set\_backlight@{set\_backlight}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{set\_backlight()}{set\_backlight()}}
+{\footnotesize\ttfamily void set\+\_\+backlight (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{color,  }\item[{GPIO\+\_\+\+Pin\+State}]{state }\end{DoxyParamCaption})}
+
+
+
+Set a backlight color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & The index of the color to set \\
+\hline
+\mbox{\texttt{ in}}  & {\em state} & The pin state to set to the backlight \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{display_8c_adf2fce95820b95a0a565b288227312e2}\label{display_8c_adf2fce95820b95a0a565b288227312e2}} 
 \index{display.c@{display.c}!set\_row@{set\_row}}
 \index{set\_row@{set\_row}!display.c@{display.c}}
@@ -146,9 +203,12 @@ Set the cursor on the display.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em row} & The row to write to \\
+\mbox{\texttt{ in}}  & {\em row} & The row to set the cursor to \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HAL status 
+\end{DoxyReturn}
 \mbox{\Hypertarget{display_8c_a414526962a6150dfd5835360a509c36c}\label{display_8c_a414526962a6150dfd5835360a509c36c}} 
 \index{display.c@{display.c}!split\_byte@{split\_byte}}
 \index{split\_byte@{split\_byte}!display.c@{display.c}}
@@ -166,3 +226,14 @@ Split a byte to send to the display.
 \mbox{\texttt{ out}}  & {\em buffer} & Where to place the two new bytes \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{display_8c_a0993935dab5558085ba00e3adee08fea}\label{display_8c_a0993935dab5558085ba00e3adee08fea}} 
+\index{display.c@{display.c}!test\_backlight@{test\_backlight}}
+\index{test\_backlight@{test\_backlight}!display.c@{display.c}}
+\doxysubsubsection{\texorpdfstring{test\_backlight()}{test\_backlight()}}
+{\footnotesize\ttfamily void test\+\_\+backlight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test all backlight colors. 
+
+Run through each color of the display to see that they are lighting up. 
